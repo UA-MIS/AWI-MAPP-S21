@@ -1,12 +1,18 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
+import { StackNavigationProp } from '@react-navigation/stack';
 
-export default function SafetyScreen() {
-    return (
-        <View>
-            <Text>
-                This is safety
-            </Text>
-        </View>
-    );
+import SafetyList from '../components/safety-list';
+import { SafetyParamList } from '../types';
+
+type SafetyScreenNavigationProp =
+    StackNavigationProp<SafetyParamList, 'SafetyScreen'>;
+
+type Props = {
+    navigation: SafetyScreenNavigationProp;
 }
+
+export default function SafetyScreen({navigation}: Props) {
+    return (
+        <SafetyList navigation={navigation}/>
+    );
+};

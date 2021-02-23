@@ -18,7 +18,7 @@ export default {
             },
             Safety: {
                 screens: {
-                  SafetyScreen: 'safety',
+                  SafetyScreen: 'safety'
                 },
               }
           },
