@@ -5,7 +5,7 @@ import AppButton from '../components/AppButton';
 
 
 
-function MapScreen(props) {
+export default function MapScreen(props) {
 
     const handleMapPress = (event)=>{
         console.log(event.nativeEvent.coordinate);
@@ -17,7 +17,6 @@ function MapScreen(props) {
     }
 
     findCoordinates = () => {
-        console.log("in find coordniates");
         useEffect(() => {
             navigator.geolocation.getCurrentPosition(
                 position => {
@@ -48,7 +47,7 @@ function MapScreen(props) {
                 <MapView style={styles.map} 
                     region={{latitude: mapState.location.coords.latitude, longitude: mapState.location.coords.longitude,latitudeDelta: 0.0922, longitudeDelta: 0.0921}}
                     onPress={(event) => {handleMapPress(event)}}
-                    onRegionChange={(region) => {console.log(region);}}
+                    //onRegionChange={(region) => {console.log(region);}}
                 >
                     <MapView.Marker
                         coordinate={mapState.location.coords}
@@ -72,5 +71,3 @@ const styles = StyleSheet.create({
         height: Dimensions.get('window').height
     }
 })
-
-export default MapScreen;
