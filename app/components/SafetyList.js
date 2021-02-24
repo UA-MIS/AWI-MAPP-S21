@@ -1,14 +1,11 @@
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import SafetyList from '../components/SafetyList';
-
-
-export default function SafetyScreen() {
+export default function SafetyList() {
     return (
-        <View style={styles.container}>
-            <SafetyList />
-        </View>
+        <Text>
+            This is the safety data
+        </Text>
     );
 }
 
