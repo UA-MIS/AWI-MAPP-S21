@@ -2,15 +2,11 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
 
-import { BottomTabParamList, WeatherParamList, TidesParamList, SafetyParamList } from '../types';
-
 import WeatherScreen from '../screens/WeatherScreen';
 import TidesScreen from '../screens/TidesScreen';
 import SafetyScreen from '../screens/SafetyScreen';
 
-import SafetyItemScreen from '../screens/SafetyItemScreen';
-
-const BottomTab = createBottomTabNavigator<BottomTabParamList>();
+const BottomTab = createBottomTabNavigator();
 
 export default function BottomTabNavigator() {
 
@@ -36,7 +32,7 @@ export default function BottomTabNavigator() {
     );
 }
 
-const WeatherStack = createStackNavigator<WeatherParamList>();
+const WeatherStack = createStackNavigator();
 
 function WeatherNavigator() {
     return (
@@ -50,7 +46,7 @@ function WeatherNavigator() {
     );
 }
 
-const TidesStack = createStackNavigator<TidesParamList>();
+const TidesStack = createStackNavigator();
 
 function TidesNavigator() {
     return (
@@ -64,22 +60,15 @@ function TidesNavigator() {
     );
 }
 
-const SafetyStack = createStackNavigator<SafetyParamList>();
+const SafetyStack = createStackNavigator();
 
 function SafetyNavigator() {
     return (
-        <SafetyStack.Navigator
-            initialRouteName='SafetyScreen'
-        >
+        <SafetyStack.Navigator>
             <SafetyStack.Screen
                 name="SafetyScreen"
                 component={SafetyScreen}
                 options={{ headerTitle: 'Safety' }}
-            />
-
-            <SafetyStack.Screen
-                name="SafetyItemScreen"
-                component={SafetyItemScreen}
             />
         </SafetyStack.Navigator> 
     );

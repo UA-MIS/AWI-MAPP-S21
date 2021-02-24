@@ -1,14 +1,12 @@
 {
   "expo": {
-    "name": "MAPP",
-    "slug": "MAPP",
+    "name": "AWI-MAPP-S21",
+    "slug": "AWI-MAPP-S21",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "mapp",
-    "userInterfaceStyle": "automatic",
+    "icon": "./app/assets/icon.png",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./app/assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -23,12 +21,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
     "web": {
-      "favicon": "./assets/images/icon.png"
+      "favicon": "./app/assets/favicon.png"
     }
   }
 }
