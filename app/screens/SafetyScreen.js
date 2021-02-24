@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function WeatherScreen() {
+export default function SafetyScreen() {
     return (
         <View style={styles.container}>
-            <Text onPress={() => console.log("Weather text pressed")}>
-                This is weather
+            <Text>
+                I am safety
             </Text>
         </View>
     );
