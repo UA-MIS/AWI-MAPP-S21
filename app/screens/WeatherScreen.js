@@ -8,7 +8,8 @@ import WeatherDetails from '../components/WeatherDetails';
 import { API_KEY } from '../utils/WeatherApiKey';
 import LocationService from '../utils/LocationService';
 
-export default function WeatherScreen() {
+
+export default function WeatherScreen({navigation}) {
 
     // const fetchWeather = (lat, lon) => {
     //     console.log("In the fetch Weather");
@@ -67,6 +68,10 @@ export default function WeatherScreen() {
                     temperature = {weatherState.temperature}
                 />
             )}
+               <Button
+        onPress={() => navigation.navigate('MyModal')}
+        title="Open Modal"
+      />
         </Screen>
     );
 }
