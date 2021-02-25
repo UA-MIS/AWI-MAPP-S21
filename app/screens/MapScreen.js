@@ -3,7 +3,9 @@ import { Alert, Dimensions, Button, SafeAreaView, StyleSheet, Constants, Locatio
 import MapView from 'react-native-maps';
 
 
-export default function MapScreen({navigation}) {
+export default function MapScreen({navigation, route}) {
+    const { screenName } = route.params;
+console.log(screenName);
     const handleMapPress = (event)=>{
         console.log(event.nativeEvent.coordinate);
         setMapState({
@@ -52,11 +54,30 @@ export default function MapScreen({navigation}) {
                         description="Your Current Location"
                     />
                 </MapView>
-                <Button
+                {/* <Button
 title="Dismiss"
         onPress={() => {
           // Pass params back to home screen
-          navigation.navigate('Root', { latt: 29 });
+          navigation.navigate('Root',  {
+            screen: screenName,
+            params: {
+              latt: 29 
+            }
+        }
+
+              
+          );
+        }}
+      /> */}
+      <Button
+title="Dismiss"
+        onPress={() => {
+          // Pass params back to home screen
+          navigation.navigate(screenName,  {
+              lat: mapState.location.coords.latitude,
+              long: mapState.location.coords.longitude
+            }
+          );
         }}
       />
             </SafeAreaView>

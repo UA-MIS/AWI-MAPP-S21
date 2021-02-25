@@ -10,13 +10,18 @@ import LocationService from '../utils/LocationService';
 
 
 export default function WeatherScreen({navigation, route}) {
-   // const { lat } = route.params;
+    //const { latt } = route.params;
    React.useEffect(() => {
-    if (route.params?.latt) {
-      // Post updated, do something with `route.params.post`
-      // For example, send the post to the server
+    if (route.params?.lat) {
+      console.log(route.params?.lat);
     }
-  }, [route.params?.latt]);
+  }, [route.params?.lat]);
+  React.useEffect(() => {
+    if (route.params?.long) {
+      console.log(route.params?.long);
+    }
+  }, [route.params?.long]);
+  //console.log(latt);
 
     // const fetchWeather = (lat, lon) => {
     //     console.log("In the fetch Weather");
@@ -75,10 +80,12 @@ export default function WeatherScreen({navigation, route}) {
                     temperature = {weatherState.temperature}
                 />
             )}
-                            <Text style={{ margin: 10 }}>Post: {route.params?.latt}</Text>
+                            <Text style={{ margin: 10 }}>Post: {route.params?.lat}</Text>
 
                <Button
-        onPress={() => navigation.navigate('MyModal')}
+        onPress={() => navigation.navigate('MyModal', {
+            screenName: 'WeatherScreen',
+          })}
         title="Open Modal"
       />
         </Screen>

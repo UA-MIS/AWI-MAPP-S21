@@ -9,7 +9,9 @@ export default function TidesScreen({navigation}) {
     return (
         <View style={styles.container}>
          <Button
-        onPress={() => navigation.navigate('MyModal')}
+        onPress={() => navigation.navigate('MyModal', {
+            screenName: 'TidesScreen',
+          })}
         title="Open Modal"
       />
 
