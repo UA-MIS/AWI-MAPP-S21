@@ -80,7 +80,7 @@ export default function WeatherScreen({navigation, route}) {
                     temperature = {weatherState.temperature}
                 />
             )}
-                            <Text style={{ margin: 10 }}>Post: {route.params?.lat}</Text>
+                            <Text style={{ margin: 10 }}>Latitude: {route.params?.lat}</Text>
 
                <Button
         onPress={() => navigation.navigate('MyModal', {
