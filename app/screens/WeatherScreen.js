@@ -1,5 +1,5 @@
 import React, {Component, useEffect, useState} from 'react';
-import { Button, StyleSheet, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
 import MapScreen from './MapScreen';
 import AppButton from '../components/AppButton';
@@ -9,7 +9,14 @@ import { API_KEY } from '../utils/WeatherApiKey';
 import LocationService from '../utils/LocationService';
 
 
-export default function WeatherScreen({navigation}) {
+export default function WeatherScreen({navigation, route}) {
+   // const { lat } = route.params;
+   React.useEffect(() => {
+    if (route.params?.latt) {
+      // Post updated, do something with `route.params.post`
+      // For example, send the post to the server
+    }
+  }, [route.params?.latt]);
 
     // const fetchWeather = (lat, lon) => {
     //     console.log("In the fetch Weather");
@@ -61,13 +68,15 @@ export default function WeatherScreen({navigation}) {
         <Screen style={styles.container}>
             {weatherState.isLoading ? (
                 <AppButton title="Load Weather Data" onPress={()=> fetchWeather(lat, lon)} />
-               
+
             ): (
                 <WeatherDetails 
                     weather = {weatherState.weatherCondition}
                     temperature = {weatherState.temperature}
                 />
             )}
+                            <Text style={{ margin: 10 }}>Post: {route.params?.latt}</Text>
+
                <Button
         onPress={() => navigation.navigate('MyModal')}
         title="Open Modal"

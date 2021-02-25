@@ -1,12 +1,18 @@
 import * as React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
 import MapScreen from './MapScreen';
 
-export default function TidesScreen() {
+export default function TidesScreen({navigation}) {
+    //const lat = navigation.getParam('lat');   
+    
     return (
         <View style={styles.container}>
-            <MapScreen />
+         <Button
+        onPress={() => navigation.navigate('MyModal')}
+        title="Open Modal"
+      />
+
         </View>
     );
 }

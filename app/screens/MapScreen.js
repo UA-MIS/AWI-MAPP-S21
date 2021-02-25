@@ -1,12 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import { Alert, Dimensions, View, StyleSheet, Constants, Location, Permissions } from 'react-native';
+import { Alert, Dimensions, Button, SafeAreaView, StyleSheet, Constants, Location, Permissions } from 'react-native';
 import MapView from 'react-native-maps';
-import AppButton from '../components/AppButton';
 
 
-
-export default function MapScreen(props) {
-
+export default function MapScreen({navigation}) {
     const handleMapPress = (event)=>{
         console.log(event.nativeEvent.coordinate);
         setMapState({
@@ -43,7 +40,7 @@ export default function MapScreen(props) {
     const [mapState, setMapState] = useState(initialMapState);
     
     return (
-            <View style={styles.container}>
+            <SafeAreaView style={styles.container}>
                 <MapView style={styles.map} 
                     region={{latitude: mapState.location.coords.latitude, longitude: mapState.location.coords.longitude,latitudeDelta: 0.0922, longitudeDelta: 0.0921}}
                     onPress={(event) => {handleMapPress(event)}}
@@ -55,8 +52,16 @@ export default function MapScreen(props) {
                         description="Your Current Location"
                     />
                 </MapView>
-            </View>
+                <Button
+title="Dismiss"
+        onPress={() => {
+          // Pass params back to home screen
+          navigation.navigate('Root', { latt: 29 });
+        }}
+      />
+            </SafeAreaView>
     );
+    
 }
 
 const styles = StyleSheet.create({

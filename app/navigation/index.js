@@ -20,7 +20,7 @@ function RootNavigator() {
     return (
         <Stack.Navigator mode="modal">
             <Stack.Screen name='Root' component={BottomTabNavigator} options={{ headerShown: false }} />
-            <Stack.Screen name="MyModal" component={MapScreen} />
+            <Stack.Screen name="MyModal" component={MapScreen}  options={{ headerShown: false }}/>
             <Stack.Screen name='NotFound' component={NotFoundScreen} />
         </Stack.Navigator>
     )
