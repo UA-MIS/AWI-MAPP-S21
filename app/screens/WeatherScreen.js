@@ -7,6 +7,7 @@ import Screen from '../components/Screen';
 import WeatherDetails from '../components/WeatherDetails';
 import { API_KEY } from '../utils/WeatherApiKey';
 import LocationService from '../utils/LocationService';
+import AddressService from '../utils/AddressService';
 
 
 export default function WeatherScreen({navigation, route}) {
@@ -72,6 +73,8 @@ export default function WeatherScreen({navigation, route}) {
     const [weatherState, setWeatherState] = useState(initialWeatherState);
 
     let { lat, lon } = LocationService();
+   let thecity = AddressService(lat, lon);
+
 
     return (
         <Screen style={styles.container}>
@@ -85,6 +88,8 @@ export default function WeatherScreen({navigation, route}) {
                 />
             )}
                             <Text style={{ margin: 10 }}>Latitude: {route.params?.lat}</Text>
+                            <Text style={{ margin: 10 }}>{thecity}</Text>
+
 
                <Button
         onPress={() => navigation.navigate('MyModal', {

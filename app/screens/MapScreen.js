@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { Alert, Dimensions, Button, SafeAreaView, StyleSheet, Constants, Location, Permissions } from 'react-native';
 import MapView from 'react-native-maps';
-import { MAP_API_KEY } from '../utils/GoogleApiKey';
 
 
 export default function MapScreen({navigation, route}) {
@@ -42,35 +41,7 @@ export default function MapScreen({navigation, route}) {
 
     const [mapState, setMapState] = useState(initialMapState);
     
-    fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + mapState.location.coords.latitude + ',' + mapState.location.coords.longitude + '&key=' + MAP_API_KEY)
-        .then((response) => response.json())
-        .then((responseJson) => {
-            console.log(JSON.stringify(responseJson));
-      
-    let storableLocation = {};
-
-    for (var ac = 0; ac < responseJson.results[0].address_components.length; ac++) {
-        var component = responseJson.results[0].address_components[ac];
-
-        switch(component.types[0]) {
-            case 'locality':
-                storableLocation.city = component.long_name;
-                break;
-            case 'administrative_area_level_1':
-                storableLocation.state = component.short_name;
-                break;
-            case 'country':
-                storableLocation.country = component.long_name;
-                storableLocation.registered_country_iso_code = component.short_name;
-                break;
-            case 'establishment':
-                    storableLocation.establishment = component.long_name;
-                    break;
-        }
-    };
-            console.log(storableLocation);
-   
-})
+    
 
     return (
             <SafeAreaView style={styles.container}>
