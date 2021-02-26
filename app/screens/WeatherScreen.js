@@ -21,7 +21,11 @@ export default function WeatherScreen({navigation, route}) {
       console.log(route.params?.long);
     }
   }, [route.params?.long]);
-  //console.log(latt);
+//   React.useEffect(() => {
+//     if (route.params?.city) {
+//       console.log(route.params?.city);
+//     }
+//   }, [route.params?.city]);
 
     // const fetchWeather = (lat, lon) => {
     //     console.log("In the fetch Weather");
