@@ -5,6 +5,7 @@ import * as React from 'react';
 import WeatherScreen from '../screens/WeatherScreen';
 import TidesScreen from '../screens/TidesScreen';
 import SafetyScreen from '../screens/SafetyScreen';
+import SafetyItemScreen from '../screens/SafetyItemScreen';
 
 const BottomTab = createBottomTabNavigator();
 
@@ -69,6 +70,11 @@ function SafetyNavigator() {
                 name="SafetyScreen"
                 component={SafetyScreen}
                 options={{ headerTitle: 'Safety' }}
+            />
+            <SafetyStack.Screen
+                name='SafetyItemScreen'
+                component={SafetyItemScreen}
+                options={{ headerTitle: 'Safety Item'}}
             />
         </SafetyStack.Navigator> 
     );
