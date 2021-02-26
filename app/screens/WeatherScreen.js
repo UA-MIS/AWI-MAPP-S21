@@ -74,7 +74,10 @@ export default function WeatherScreen({navigation, route}) {
 
     let { lat, lon } = LocationService();
    let thecity = AddressService(lat, lon);
-
+//    let jsonData;
+//    AddressService(lat, lon).then((data) => {
+//       jsonData = data;
+//    }        
 
     return (
         <Screen style={styles.container}>
