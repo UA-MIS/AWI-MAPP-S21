@@ -41,23 +41,13 @@ export default function MapScreen({navigation, route}) {
     }
 
     const [mapState, setMapState] = useState(initialMapState);
-    // const city = Geocoder.from({
-    //     lat: mapState.location.coords.latitude,
-    //     lng: mapState.location.coords.longitude
-    // }).then(json => 
-    //     {
-    //     var addressComponent = json.results[0].formatted_address;
-    //     this.setState({addressComponent})
-
-    //       // Alert.alert(this.state.addressComponent)
-    //   }) ;
     
     fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + mapState.location.coords.latitude + ',' + mapState.location.coords.longitude + '&key=' + MAP_API_KEY)
         .then((response) => response.json())
         .then((responseJson) => {
-            console.log('ADDRESS GEOCODE is BACK!! => ' + JSON.stringify(responseJson));
+            console.log(JSON.stringify(responseJson));
       
-            let storableLocation = {};
+    let storableLocation = {};
 
     for (var ac = 0; ac < responseJson.results[0].address_components.length; ac++) {
         var component = responseJson.results[0].address_components[ac];
@@ -78,13 +68,9 @@ export default function MapScreen({navigation, route}) {
                     break;
         }
     };
-    
             console.log(storableLocation);
    
-          
-
 })
-   // console.log(city);
 
     return (
             <SafeAreaView style={styles.container}>
@@ -106,14 +92,12 @@ title="Dismiss"
           // Pass params back to home screen
           navigation.navigate(screenName,  {
               lat: mapState.location.coords.latitude,
-              long: mapState.location.coords.longitude
-            }
+              long: mapState.location.coords.longitude            }
           );
         }}
       />
             </SafeAreaView>
     );
-    
 }
 
 const styles = StyleSheet.create({
