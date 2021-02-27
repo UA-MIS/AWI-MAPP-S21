@@ -54,7 +54,7 @@ export const SafetyData = new Array(
     {
         id: 5,
         title: "Federally Controlled Waters",
-        image: require("./images/PFDTypes.jpg"),
+        image: '',
         description: "Boat and PWC operators must observe federal regulations when boating on: \n"
         + "- Coastal waters \n"
         + "- The Great Lakes \n"
@@ -106,7 +106,7 @@ export const SafetyData = new Array(
     {
         id: 10,
         title: "Coast Guard Emergency Contact",
-        image: require("./images/PFDTypes.jpg"),
+        image: '',
         description: "Seventh District Command Center Number: (305) 415-6800",
         link: "https://www.alea.gov/dps/marine-patrol/boat-equipment-checklist-alabama"
     }

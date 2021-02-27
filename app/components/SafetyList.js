@@ -14,7 +14,7 @@ const SafetyList = ({ navigation }) => {
                 renderItem={({ item }) => (
                     <TouchableOpacity
                         style={styles.item}
-                        onPress={() => navigation.navigate('SafetyItemScreen', { item: item})}
+                        onPress={() => navigation.navigate('SafetyItemScreen', { item: item, name: item.title })}
                     >
                         <Text>{item.title}</Text>
                     </TouchableOpacity>

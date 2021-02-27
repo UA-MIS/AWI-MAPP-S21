@@ -74,7 +74,7 @@ function SafetyNavigator() {
             <SafetyStack.Screen
                 name='SafetyItemScreen'
                 component={SafetyItemScreen}
-                options={{ headerTitle: 'Safety Item'}}
+                options={({ route }) => ({ title: route.params.name })}
             />
         </SafetyStack.Navigator> 
     );
