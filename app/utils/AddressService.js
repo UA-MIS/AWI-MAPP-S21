@@ -1,94 +1,63 @@
-import { MAP_API_KEY } from '../utils/GoogleApiKey';
-
-
-export default function AddressService(lat, lon){
-    var address = '';
-    let storableLocation = {};
-    return fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + lat + ',' + lon + '&key=' + MAP_API_KEY)
-    .then((response) => response.json())
-    .then((responseJson) => {
-        //console.log(JSON.stringify(responseJson));
-        for (var ac = 0; ac < responseJson.results[0].address_components.length; ac++) {
-            var component = responseJson.results[0].address_components[ac];
-
-            switch(component.types[0]) {
-                case 'locality':
-                    storableLocation.city = component.long_name;
-                    break;
-                case 'administrative_area_level_1':
-                    storableLocation.state = component.short_name;
-                    break;
-                case 'country':
-                    storableLocation.country = component.long_name;
-                    storableLocation.registered_country_iso_code = component.short_name;
-                    break;
-                case 'establishment':
-                    storableLocation.establishment = component.long_name;
-                    break;
-            }
-        };
-        if(storableLocation.city !== 'undefined'){
-            // console.log(storableLocation.city);
-                address = storableLocation.city;
-                if(storableLocation.state !== 'undefined'){
-                    address = address.concat(', ' + storableLocation.state);
-                }
-            }else if(storableLocation.establishment !== 'undefined'){
-                address = storableLocation.establishment;
-            }else{
-                address = lat + ', ' + lon;
-            }
-        return address;
-  
+import React, {useState, useEffect} from 'react';
+import { StyleSheet, View, Platform, Text } from 'react-native';
+import * as Location from 'expo-location';
+ 
+function AddressFinder(lat, lon) {
+    const location = {
+        latitude: lat,
+        longitude: lon 
+    }
+    const [address, setAddress] = useState(null);
+    const [errorMsg, setErrorMsg] = useState(null);
+ 
+    const requestPermission = async () => {
+        const {granted} = await Location.requestPermissionsAsync();
+        if(!granted) {
+            setErrorMsg('Permission denied');
+            return;
+        }
           
-        
+      }
     
-   });
-//    const getCity = async (lat, lon) => {
-//     let responseData  = await fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + lat + ',' + lon + '&key=' + MAP_API_KEY)
-//     //use string literals
-//     let responseJ = await responseData.json();
-//     return responseJ;
-//    }
-//    const getActivity = async () => {
-//     let responseJson = await getCity(lat, lon);
-//      //now you can directly use jsonData
-//      for (var ac = 0; ac < responseJson.results[0].address_components.length; ac++) {
-//         var component = responseJson.results[0].address_components[ac];
-
-//         switch(component.types[0]) {
-//             case 'locality':
-//                 storableLocation.city = component.long_name;
-//                 break;
-//             case 'administrative_area_level_1':
-//                 storableLocation.state = component.short_name;
-//                 break;
-//             case 'country':
-//                 storableLocation.country = component.long_name;
-//                 storableLocation.registered_country_iso_code = component.short_name;
-//                 break;
-//             case 'establishment':
-//                 storableLocation.establishment = component.long_name;
-//                 break;
-//         }
-//     };
-//     if(storableLocation.city !== 'undefined'){
-//         // console.log(storableLocation.city);
-//             address = storableLocation.city;
-//             if(storableLocation.state !== 'undefined'){
-//                 address = address.concat(', ' + storableLocation.state);
-//             }
-//         }else if(storableLocation.establishment !== 'undefined'){
-//             address = storableLocation.establishment;
-//         }else{
-//             address = lat + ', ' + lon;
-//         }
-//         console.log("hello");
-//     return address;
-  
-
-   }
-
+    const getAddress = async () => {
+        let tempAddress = await Location.reverseGeocodeAsync(location);
+        setAddress(tempAddress);
+    }
+ 
+      useEffect(() => {
+        requestPermission();
+        getAddress();
+      }, [])
+ 
+      let text = 'waiting..';
+      if(errorMsg){
+          text = errorMsg;
+      } else if(address){
+         // text=JSON.stringify(address)
+         if(address[0].city !== null){
+             text = address[0].city;
+         }else if(address[0].name !== null){
+            text = address[0].name;
+         }else{
+             text = lat + ' ' + lon;
+         }
+          
+      }
+ 
+    return (
+        <View style={styles.container}>
+            <Text>{text}</Text>
+        </View>
+    );
+}
+ 
+const styles = StyleSheet.create({
+    conatiner: {
+ 
+    }
+})
+ 
+export default AddressFinder;
 
    
    
