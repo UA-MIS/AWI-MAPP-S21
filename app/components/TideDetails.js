@@ -2,7 +2,8 @@ import React from 'react';
 import {  Button, Text, View, StyleSheet } from 'react-native';
 
 
-function TideDetails({  station, day, highTide, lowTide}) {
+function TideDetails({  station, day, height, type}) {
+    //console.log(station, day, height, type);
     return (
         <View>
             <View style={[styles.tideContainer
@@ -11,10 +12,11 @@ function TideDetails({  station, day, highTide, lowTide}) {
                 <Text>Today's Tides</Text>
                 <Text>The station Number: {station}</Text>         
                 <Text>Date: {day}</Text>
-                <Text>High Tide: {highTide}</Text>
-                <Text>Low Tide: {lowTide}</Text>
+                <Text>Height: {height}</Text>
+                <Text>type: {type}</Text>
  
              </View>
+             {/*}
              <View style={[styles.buttonContainer ]}>
                     <Button  title="Monday"/>
                     <Button  title="Tuesday"/>
@@ -24,7 +26,7 @@ function TideDetails({  station, day, highTide, lowTide}) {
                     <Button  title="Saturday"/>
                     <Button  title="Sunday"/>
              </View>
-                   
+        */} 
          </View>
        
         

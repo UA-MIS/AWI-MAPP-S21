@@ -10,8 +10,8 @@ import LocationService from '../utils/LocationService';
 
 export default function TidesScreen() {
     let station = '8729840';
-    let beginDate= '20210302';
-    let endDate = '20210305';
+    let beginDate= '20210304';
+    let endDate = '20210307';
 
 
    
@@ -25,13 +25,12 @@ export default function TidesScreen() {
         .then(res => res.json())
         .then(json => {
         console.log(json);
-        
         setTideState({
             isLoading: false,
             station: station,
-            day: json.predictions[0].t,
-            highTide: json.predictions[0].v,
-            lowTide: json.predictions[0].v,
+            day: json.predictions.t,
+            height: json.predictions.v,
+            type: json.predictions.type,
             error: null
         })      
     })
@@ -41,8 +40,8 @@ export default function TidesScreen() {
     const initialTideState = {
         isLoading: true,
         day: null,
-        highTide: 0,
-        lowTide: 0,
+        height: 0,
+        type: null,
         error: null
     }
 
@@ -51,17 +50,17 @@ export default function TidesScreen() {
 
     return (
         <Screen style={styles.container}>
-           {/* {tideState.isLoading ? (
+            {tideState.isLoading ? (
                 <AppButton title="Today's Tides" onPress={()=> fetchTides(station, beginDate, endDate)}  />
                 ):(
                   
                    <TideDetails 
                          station = {tideState.station}
-                        day = {tideState.day}
-                         highTide = {tideState.highTide}
-                         lowTide = {tideState.lowTide}
+                         day = {tideState.day}
+                         height = {tideState.height}
+                         type = {tideState.type}
                        />
-                )}*/}
+                )}
         </Screen>
     );
 }
