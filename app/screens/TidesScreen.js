@@ -13,8 +13,7 @@ export default function TidesScreen() {
     let beginDate= '20210304';
     let endDate = '20210307';
 
-
-   
+    
     const fetchTides = (station, beginDate, endDate) => {
 
 
@@ -24,29 +23,25 @@ export default function TidesScreen() {
         
         .then(res => res.json())
         .then(json => {
-        console.log(json);
-        setTideState({
-            isLoading: false,
-            station: station,
-            day: json.predictions.t,
-            height: json.predictions.v,
-            type: json.predictions.type,
-            error: null
-        })      
-    })
-        
+            setTideState({
+                isLoading: false,
+                station: station,
+                tideArray: json.predictions,
+                error: null
+            })      
+        })
     }
   
     const initialTideState = {
         isLoading: true,
-        day: null,
-        height: 0,
-        type: null,
+        station: null,
+        tideArray: null,
         error: null
     }
 
     const [tideState, setTideState] = useState(initialTideState);
 
+    
 
     return (
         <Screen style={styles.container}>
@@ -55,11 +50,8 @@ export default function TidesScreen() {
                 ):(
                   
                    <TideDetails 
-                         station = {tideState.station}
-                         day = {tideState.day}
-                         height = {tideState.height}
-                         type = {tideState.type}
-                       />
+                        tideArray = {tideState.tideArray}
+                    />
                 )}
         </Screen>
     );
