@@ -1,19 +1,28 @@
+import React, {Component, useEffect, useState} from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
 import MapScreen from './MapScreen';
-import React, {Component, useEffect, useState} from 'react';
-import { Button, StyleSheet, View, Text } from 'react-native';
 import TideDetails from '../components/TideDetails';
 import AppButton from '../components/AppButton';
 import Screen from '../components/Screen';
 import LocationService from '../utils/LocationService';
 
 
-export default function TidesScreen() {
+export default function TidesScreen({ navigation, route }) {
     let station = '8729840';
     let beginDate= '20210302';
     let endDate = '20210305';
 
-
+    React.useEffect(() => {
+        if (route.params?.lat) {
+          console.log(route.params?.lat);
+        }
+      }, [route.params?.lat]);
+      React.useEffect(() => {
+        if (route.params?.long) {
+          console.log(route.params?.long);
+        }
+      }, [route.params?.long]);
    
     const fetchTides = (station, beginDate, endDate) => {
 
@@ -62,6 +71,13 @@ export default function TidesScreen() {
                          lowTide = {tideState.lowTide}
                        />
                 )}*/}
+            <AppButton
+                onPress={() => navigation.navigate('MyModal', {
+                    screenName: 'TidesScreen',
+                })}
+                title="Open Modal"
+            />
+            <Text style={{ margin: 10 }}>Latitude: {route.params?.lat}</Text>
         </Screen>
     );
 }
