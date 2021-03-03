@@ -1,33 +1,62 @@
+import * as React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
-import * as React from 'react';
 
 import WeatherScreen from '../screens/WeatherScreen';
 import TidesScreen from '../screens/TidesScreen';
 import SafetyScreen from '../screens/SafetyScreen';
 import SafetyItemScreen from '../screens/SafetyItemScreen';
 
+import { Icon } from '../hooks/useCachedResources';
+
+
 const BottomTab = createBottomTabNavigator();
+
+const activeColor = '#007AFF';
+const inactiveColor = 'gray';
 
 export default function BottomTabNavigator() {
 
     return (
         <BottomTab.Navigator
-            initialRouteName='Weather'>
+            initialRouteName='Weather'
+            tabBarOptions={{
+                activeTintColor: activeColor,
+                inactiveTintColor: inactiveColor
+            }}
+        >
             
             <BottomTab.Screen
                 name='Weather'
                 component={WeatherNavigator}
+                options={{
+                    tabBarIcon: ({ focused }) => {
+                        let color = focused ? activeColor : inactiveColor
+                        return <Icon name='cloud' size={25} color={color} /> // Proposed color: gray
+                    }
+                }}
             />
 
             <BottomTab.Screen
                 name='Tides'
                 component={TidesNavigator}
+                options={{
+                    tabBarIcon: ({ focused }) => {
+                        let color = focused ? activeColor : inactiveColor
+                        return <Icon name='waves' size={25} color={color} /> // Proposed color: gray
+                    }
+                }}
             />
 
             <BottomTab.Screen
                 name='Safety'
                 component={SafetyNavigator}
+                options={{
+                    tabBarIcon: ({ focused }) => {
+                        let color = focused ? activeColor : inactiveColor
+                        return <Icon name='lifebuoy' size={25} color={color} /> // Proposed color: gray
+                    }
+                }}
             />
         </BottomTab.Navigator>
     );
