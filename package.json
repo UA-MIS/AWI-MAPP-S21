@@ -23,7 +23,9 @@
     "react-native-maps": "0.27.1",
     "react-native-screens": "~2.15.2",
     "react-native-web": "~0.13.12",
-    "yarn": "^1.22.10"
+    "react-router-dom": "^5.2.0",
+    "yarn": "^1.22.10",
+    "expo-location": "~10.0.0"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0"
