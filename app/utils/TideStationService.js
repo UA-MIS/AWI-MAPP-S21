@@ -4,13 +4,7 @@ import LocationService from './LocationService';
 import * as TideStations from '../assets/TideStations.json';
 
 
-export default function TideStationService() {
-    const { lat, lon } = LocationService();
-
-    const curLocation = {
-        latitude: lat,
-        longitude: lon
-    }
+export default function TideStationService(curLocation = LocationService()) {
 
     const stations = TideStations.TideStations;
 

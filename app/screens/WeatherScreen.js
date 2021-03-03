@@ -72,8 +72,8 @@ export default function WeatherScreen({navigation, route}) {
     }
     const [weatherState, setWeatherState] = useState(initialWeatherState);
 
-    let { lat, lon } = LocationService();
-   let thecity = AddressService(lat, lon);
+    let curLocation = LocationService();
+    let thecity = AddressService(curLocation.latitude, curLocation.longitude);
 
 
     return (

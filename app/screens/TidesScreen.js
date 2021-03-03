@@ -30,25 +30,23 @@ export default function TidesScreen({ navigation, route }) {
    
     const fetchTides = (station, beginDate, endDate) => {
 
-
         const fetchUrl = `https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=${beginDate}&end_date=${endDate}&station=${station}&product=predictions&datum=STND&time_zone=gmt&interval=hilo&units=english&format=json`;
 
         fetch(fetchUrl)
         
         .then(res => res.json())
         .then(json => {
-        console.log(json);
-        
-        setTideState({
-            isLoading: false,
-            station: station,
-            day: json.predictions[0].t,
-            highTide: json.predictions[0].v,
-            lowTide: json.predictions[0].v,
-            error: null
-        })      
-    })
-        
+            console.log(json);
+            
+            setTideState({
+                isLoading: false,
+                station: station,
+                day: json.predictions[0].t,
+                highTide: json.predictions[0].v,
+                lowTide: json.predictions[0].v,
+                error: null
+            })      
+        })  
     }
   
     const initialTideState = {
