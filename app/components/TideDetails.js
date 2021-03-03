@@ -5,24 +5,44 @@ import DatePicker from 'react-native-datepicker';
 
 
 function TideDetails({ station, tideArray, startDate, endDate}) {
-    console.log(tideArray)
-
 
     
     return (
       <ScrollView>
             <View style={styles.container}>
                 <Text style={{fontWeight: "bold", textAlign: 'center', fontSize: 20}}>Station: {station}</Text>
-                <Text style={{fontWeight: "bold", textAlign: 'center', fontSize: 18}}>Current Tides</Text>
-                <Text >Day and Time: {tideArray[0].t}</Text>
-                <Text>Tide Change: {tideArray[0].v} ft {tideArray[0].type}{'\n'}</Text>
-                <Text>Date: {tideArray[1].t}</Text>
-                <Text>Tide Change: {tideArray[1].v} ft {tideArray[1].type}{'\n'}</Text>
-                <Text>Date: {tideArray[2].t}</Text>
-                <Text>Tide Change: {tideArray[2].v} ft {tideArray[2].type}{'\n'}</Text>
-                <Text>Date: {tideArray[3].t}</Text>
-                <Text>Tide Change: {tideArray[3].v} ft {tideArray[3].type}</Text>
+                <Text style={{fontWeight: "bold", textAlign: 'center', fontSize: 18}}>Current Tides{'\n'}</Text>
+                <Text style={styles.textContainer}>Upcoming Tide Change: <Text style={styles.dataContainer}> {tideArray[0].t} </Text></Text>
+                <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[0].v} ft {tideArray[0].type}{'\n'}</Text></Text>
+                <Text style={styles.textContainer}>Next tide change at: <Text style={styles.dataContainer}> {tideArray[1].t} </Text></Text>
+                <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[1].v} ft {tideArray[1].type}{'\n'}</Text></Text>
+                <Text style={styles.textContainer}>Next tide change at: <Text style={styles.dataContainer}> {tideArray[2].t} </Text></Text>
+                <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[2].v} ft {tideArray[2].type}{'\n'}</Text></Text>
+                <Text style={styles.textContainer}>Next tide change at: <Text style={styles.dataContainer}> {tideArray[3].t} </Text></Text>
+                <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[3].v} ft {tideArray[3].type}{'\n'}</Text></Text>
+                <Text style={styles.textContainer}>Next tide change at: <Text style={styles.dataContainer}> {tideArray[4].t} </Text></Text>
+                <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[4].v} ft {tideArray[4].type}{'\n'}</Text></Text>
+                <Text style={styles.textContainer}>Next tide change at: <Text style={styles.dataContainer}> {tideArray[5].t} </Text></Text>
+                <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[5].v} ft {tideArray[5].type}{'\n'}</Text></Text>
+                <Text style={styles.textContainer}>Next tide change at: <Text style={styles.dataContainer}> {tideArray[6].t} </Text></Text>
+                <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[6].v} ft {tideArray[6].type}{'\n'}</Text></Text>
+                <Text style={styles.textContainer}>Next tide change at: <Text style={styles.dataContainer}> {tideArray[7].t} </Text></Text>
+                <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[7].v} ft {tideArray[7].type}{'\n'}</Text></Text>
+                <Text style={styles.textContainer}>Next tide change at: <Text style={styles.dataContainer}> {tideArray[8].t} </Text></Text>
+                <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[8].v} ft {tideArray[8].type}{'\n'}</Text></Text>
+                <Text style={styles.textContainer}>Next tide change at: <Text style={styles.dataContainer}> {tideArray[9].t} </Text></Text>
+                <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[9].v} ft {tideArray[9].type}{'\n'}</Text></Text>
+                <Text style={styles.textContainer}>Next tide change at: <Text style={styles.dataContainer}> {tideArray[10].t} </Text></Text>
+                <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[10].v} ft {tideArray[10].type}{'\n'}</Text></Text>
+                <Text style={styles.textContainer}>Next tide change at: <Text style={styles.dataContainer}> {tideArray[11].t} </Text></Text>
+                <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[11].v} ft {tideArray[11].type}{'\n'}</Text></Text>
+                <Text style={styles.textContainer}>Next tide change at: <Text style={styles.dataContainer}> {tideArray[12].t} </Text></Text>
+                <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[12].v} ft {tideArray[12].type}{'\n'}</Text></Text>
+                <Text style={styles.textContainer}>Next tide change at: <Text style={styles.dataContainer}> {tideArray[13].t} </Text></Text>
+                <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[13].v} ft {tideArray[3].type}{'\n'}</Text></Text>
+                
             </View>
+            {/*
             <View style={styles.forecastContainer}>
                 <Text style={{fontWeight: 'bold', textAlign: 'center', fontSize: 20}}>Choose Date</Text>
                 
@@ -56,7 +76,7 @@ function TideDetails({ station, tideArray, startDate, endDate}) {
                 }}
             />
 
-            </View>
+            </View>*/}
         </ScrollView>
 
     
@@ -65,15 +85,26 @@ function TideDetails({ station, tideArray, startDate, endDate}) {
 
 const styles = StyleSheet.create({
     container: {
-        height: 310,
+        flex: 1,
         borderRadius: 8, 
         marginBottom: 3, 
         marginTop: 3,
         borderWidth: 3, 
         width: 385,  
-        backgroundColor: 'powderblue', 
+        backgroundColor: '#D1E2D2', 
         
 	},
+    textContainer:{
+        fontSize: 18,
+        fontWeight: 'bold',
+        marginLeft: 5
+        
+    },
+    dataContainer:{
+        fontSize: 15,
+        color: 'red'
+    },
+
     forecastContainer: {
         borderRadius: 8, 
         marginBottom: 3, 
@@ -81,7 +112,7 @@ const styles = StyleSheet.create({
         borderWidth: 3, 
         width: 385,  
         height: 310,
-        backgroundColor: 'powderblue', 
+        backgroundColor: '#D1E2D2', 
         
 	},
     title: {
