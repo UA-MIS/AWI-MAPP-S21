@@ -21,8 +21,11 @@ export default function TidesScreen() {
     var day= myDate.getDate();
       if(day <= 9)
         day = '0'+day;
+    var tom = myDate.getDate()+1;
+      if(tom <= 9)
+        tom = '0'+tom;
     let startDate = year + month + day;
-    let endDate = startDate
+    let endDate = year + month + tom;
 
     console.log(startDate, endDate) //console log
 

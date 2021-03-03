@@ -11,7 +11,7 @@ function TideDetails({ station, tideArray, startDate, endDate}) {
       <ScrollView>
             <View style={styles.container}>
                 <Text style={{fontWeight: "bold", textAlign: 'center', fontSize: 20}}>Station: {station}</Text>
-                <Text style={{fontWeight: "bold", textAlign: 'center', fontSize: 18}}>Today</Text>
+                <Text style={{fontWeight: "bold", textAlign: 'center', fontSize: 18}}>Current Tides</Text>
                 <Text >Day and Time: {tideArray[0].t}</Text>
                 <Text>Tide Change: {tideArray[0].v} ft {tideArray[0].type}{'\n'}</Text>
                 <Text>Date: {tideArray[1].t}</Text>
