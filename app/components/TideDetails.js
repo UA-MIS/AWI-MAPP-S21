@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Text, View, StyleSheet } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-//import DatePicker from 'react-native-datepicker';
+import DatePicker from 'react-native-datepicker';
 
 
 function TideDetails({ station, tideArray, startDate, endDate}) {
@@ -22,11 +22,11 @@ function TideDetails({ station, tideArray, startDate, endDate}) {
                 <Text>Tide Change: {tideArray[3].v} ft {tideArray[3].type}</Text>
             </View>
             <View style={styles.forecastContainer}>
-                <Text>This is the forecasted data</Text>
-                {/*
+                <Text style={{fontWeight: 'bold', textAlign: 'center', fontSize: 20}}>Choose Date</Text>
+                
                 <DatePicker
                 style={styles.datePickerStyle}
-                startDate={tideState.startDate} // Initial date from state 
+                startDate={startDate} // Initial date from state 
                 mode="date" // The enum of date, datetime and time
                 placeholder="select date"
                 format="YYYY/MM/DD"
@@ -50,7 +50,7 @@ function TideDetails({ station, tideArray, startDate, endDate}) {
                     setStartDate(startDate);
 
                 }}
-            />*/}
+            />
 
             </View>
         </ScrollView>
@@ -89,6 +89,7 @@ const styles = StyleSheet.create({
       datePickerStyle: {
         width: 200,
         marginTop: 20,
+        marginLeft: 75
       },
 })
 
