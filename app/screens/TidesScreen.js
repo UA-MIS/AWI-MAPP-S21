@@ -8,16 +8,29 @@ import Screen from '../components/Screen';
 import LocationService from '../utils/LocationService';
 
 
+
 export default function TidesScreen() {
-    let station = '8729840';
-    let beginDate= '20210304';
-    let endDate = '20210307';
+  
+    let station = '8729840'
+    var myDate = new Date();
 
-    
-    const fetchTides = (station, beginDate, endDate) => {
+    var year = myDate.getFullYear();
+    var month = myDate.getMonth() + 1;
+      if(month <= 9)
+        month = '0'+month;
+    var day= myDate.getDate();
+      if(day <= 9)
+        day = '0'+day;
+    let startDate = year + month + day;
+    let endDate = startDate
+
+    console.log(startDate, endDate) //console log
 
 
-        const fetchUrl = `https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=${beginDate}&end_date=${endDate}&station=${station}&product=predictions&datum=STND&time_zone=gmt&interval=hilo&units=english&format=json`;
+    const fetchTides = (station, startDate, endDate) => {
+
+
+        const fetchUrl = `https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=${startDate}&end_date=${endDate}&station=${station}&product=predictions&datum=STND&time_zone=gmt&interval=hilo&units=english&format=json`;
 
         fetch(fetchUrl)
         
@@ -27,6 +40,8 @@ export default function TidesScreen() {
                 isLoading: false,
                 station: station,
                 tideArray: json.predictions,
+                startDate: startDate, //--------??
+                endDate: endDate,
                 error: null
             })      
         })
@@ -36,7 +51,9 @@ export default function TidesScreen() {
         isLoading: true,
         station: null,
         tideArray: null,
-        error: null
+        startDate: '0',
+        endDate: '0',
+        error: null,
     }
 
     const [tideState, setTideState] = useState(initialTideState);
@@ -46,11 +63,15 @@ export default function TidesScreen() {
     return (
         <Screen style={styles.container}>
             {tideState.isLoading ? (
-                <AppButton title="Today's Tides" onPress={()=> fetchTides(station, beginDate, endDate)}  />
+                <AppButton title="Today's Tides" onPress={()=> fetchTides(station, startDate, endDate)}  />
                 ):(
                   
                    <TideDetails 
                         tideArray = {tideState.tideArray}
+                        station ={tideState.station}
+                        startDate = {tideState.startDate}
+                        endDate = {tideState.endDate}
+
                     />
                 )}
         </Screen>
