@@ -1,5 +1,5 @@
 {
-    "Sheet1": [
+    "TideStations": [
         {
             "Location": "Alabama Point",
             "station number": "8730667",
@@ -3781,13 +3781,6 @@
             "station number": "8729905",
             "lat": "30.4183",
             "long": "-87.3567",
-            "predictions": "Harmonic"
-        },
-        {
-            "Location": "Alabama Point",
-            "station number": "8730667",
-            "lat": "30.2786",
-            "long": "-87.555",
             "predictions": "Harmonic"
         }
     ]

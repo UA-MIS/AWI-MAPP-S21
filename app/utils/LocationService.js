@@ -3,8 +3,13 @@
 // Returns lat and lon of current location as numbers
 
 export default function LocationService () {
-    var lat = 33.1254;
-    var lon = -87.3248;
+    let lat = 33.1254;
+    let lon = -87.3248;
 
-    return { lat, lon };
+    let curLocation = {
+        latitude: lat,
+        longitude: lon
+    }
+
+    return curLocation;
 }
