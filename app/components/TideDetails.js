@@ -6,7 +6,9 @@ import DatePicker from 'react-native-datepicker';
 
 function TideDetails({ station, tideArray, startDate, endDate}) {
     console.log(tideArray)
-    console.log(startDate)
+
+
+    
     return (
       <ScrollView>
             <View style={styles.container}>
@@ -25,6 +27,7 @@ function TideDetails({ station, tideArray, startDate, endDate}) {
                 <Text style={{fontWeight: 'bold', textAlign: 'center', fontSize: 20}}>Choose Date</Text>
                 
                 <DatePicker
+
                 style={styles.datePickerStyle}
                 startDate={startDate} // Initial date from state 
                 mode="date" // The enum of date, datetime and time
@@ -48,6 +51,7 @@ function TideDetails({ station, tideArray, startDate, endDate}) {
                 }}
                 onStartDateChange={(startDate) => {
                     setStartDate(startDate);
+                    setEndDate(endDate)
 
                 }}
             />
