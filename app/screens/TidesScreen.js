@@ -6,12 +6,16 @@ import TideDetails from '../components/TideDetails';
 import AppButton from '../components/AppButton';
 import Screen from '../components/Screen';
 import LocationService from '../utils/LocationService';
+import TideStationService from '../utils/TideStationService';
 
 
 export default function TidesScreen({ navigation, route }) {
     let station = '8729840';
     let beginDate= '20210302';
     let endDate = '20210305';
+
+    console.log('Closest station: ');
+    console.log(TideStationService());
 
     React.useEffect(() => {
         if (route.params?.lat) {
