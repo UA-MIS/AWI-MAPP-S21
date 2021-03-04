@@ -4,17 +4,21 @@ import { ScrollView } from 'react-native-gesture-handler';
 import DatePicker from 'react-native-datepicker';
 
 
-function TideDetails({ station, tideArray, startDate, endDate}) {
+function TideDetails({ station, locationName, tideArray, startDate, endDate}) {
 
-    
+    if(tideArray.type == "L"){
+        tideArray.type == "Low Tide"
+    }else{
+        tideArray.type == "High Tide"
+    }
     return (
       <ScrollView>
             <View style={styles.container}>
-                <Text style={{fontWeight: "bold", textAlign: 'center', fontSize: 20}}>Station: {station}</Text>
+                <Text style={{fontWeight: "bold", textAlign: 'center', fontSize: 20}}>Station: {station} {locationName}</Text>
                 <Text style={{fontWeight: "bold", textAlign: 'center', fontSize: 18}}>Current Tides{'\n'}</Text>
-                <Text style={styles.textContainer}>Upcoming Tide Change: <Text style={styles.dataContainer}> {tideArray[0].t} </Text></Text>
+                <Text style={styles.textContainer}>Today's Tide Change: <Text style={styles.dataContainer}> {tideArray[0].t} </Text></Text>
                 <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[0].v} ft {tideArray[0].type}{'\n'}</Text></Text>
-                <Text style={styles.textContainer}>Next tide change at: <Text style={styles.dataContainer}> {tideArray[1].t} </Text></Text>
+                <Text style={styles.textContainer}>Today's Tide Change: <Text style={styles.dataContainer}> {tideArray[1].t} </Text></Text>
                 <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[1].v} ft {tideArray[1].type}{'\n'}</Text></Text>
                 <Text style={styles.textContainer}>Next tide change at: <Text style={styles.dataContainer}> {tideArray[2].t} </Text></Text>
                 <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[2].v} ft {tideArray[2].type}{'\n'}</Text></Text>
