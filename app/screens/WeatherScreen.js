@@ -69,10 +69,10 @@ export default function WeatherScreen({ navigation, route }) {
   };
   const [weatherState, setWeatherState] = useState(initialWeatherState);
 
-  let lat = 30;
-  let lon = -87;
   let coords = LocationService();
-  let thecity = AddressService(30, -87);
+  let lat = coords.coord.latitude;
+  let lon = coords.coord.longitude;
+  let thecity = AddressService(lat, lon);
   console.log(coords.coord.latitude);
   return (
     <Screen style={styles.container}>
@@ -89,7 +89,6 @@ export default function WeatherScreen({ navigation, route }) {
       )}
       <Text style={{ margin: 10 }}>Latitude: {route.params?.lon}</Text>
       <Text style={{ margin: 10 }}>{thecity}</Text>
-      {/* <Text style={{ margin: 10 }}>{latiii}</Text> */}
 
       <Button
         onPress={() =>

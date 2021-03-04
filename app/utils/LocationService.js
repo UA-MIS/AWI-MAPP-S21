@@ -10,6 +10,8 @@ export default function LocationService() {
       console.log("get location was called");
 
       let { status } = await Location.requestPermissionsAsync();
+      //  let { status } = await Permissions.askAsync(Permissions.CAMERA);
+
       if (status !== "granted") {
         setErrorMsg("Permission to access location was denied");
         return;
@@ -22,31 +24,20 @@ export default function LocationService() {
   }, []);
 
   let text = "Waiting..";
+  //let fakeLocation = {};
   const coord = {
     altitude: 0,
     altitudeAccuracy: -1,
-    latitude: 37.785834,
+    latitude: 30.6954,
     accuracy: 5,
-    longitude: -122.406417,
+    longitude: -88.0399,
     heading: -1,
     speed: -1,
   };
   if (errorMsg) {
     text = errorMsg;
     alert(errorMsg);
-    let fakeLocation = {
-      coords: {
-        altitude: 0,
-        altitudeAccuracy: -1,
-        latitude: 37.785834,
-        accuracy: 5,
-        longitude: -122.406417,
-        heading: -1,
-        speed: -1,
-      },
-      timestamp: 1614872382359.7021,
-    };
-    const coord = fakeLocation.coords;
+
     return { coord };
   } else if (location) {
     text = JSON.stringify(location);
