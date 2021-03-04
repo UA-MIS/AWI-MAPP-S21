@@ -10,12 +10,7 @@ function TideDetails({ station, locationName, tideArray, startDate, endDate}) {
 
     var s = tideArray[0].t.replace(" ", "T") ;
     s= s.concat(":00");
-    console.log(s);
-
-
-
     var d = new Date(s);
-    console.log(d.getDay());
 
 
 for(let i = 0; i < tideArray.length; i++){

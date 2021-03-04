@@ -7,7 +7,6 @@ export default function LocationService() {
   const [errorMsg, setErrorMsg] = useState(null);
   useEffect(() => {
     (async () => {
-      console.log("get location was called");
 
       let { status } = await Location.requestPermissionsAsync();
       //  let { status } = await Permissions.askAsync(Permissions.CAMERA);
