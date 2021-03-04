@@ -1,7 +1,6 @@
 import React, {Component, useEffect, useState} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import MapScreen from './MapScreen';
 import TideDetails from '../components/TideDetails';
 import AppButton from '../components/AppButton';
 import Screen from '../components/Screen';
