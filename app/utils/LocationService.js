@@ -11,7 +11,6 @@ export default function LocationService() {
 
       let { status } = await Location.requestPermissionsAsync();
       //  let { status } = await Permissions.askAsync(Permissions.CAMERA);
-
       if (status !== "granted") {
         setErrorMsg("Permission to access location was denied");
         return;
@@ -35,18 +34,13 @@ export default function LocationService() {
     speed: -1,
   };
   if (errorMsg) {
-    text = errorMsg;
-    alert(errorMsg);
-
-    return { latitude: coord.latitude, longitude: coord.longitude };
+      text = errorMsg;
+      alert(errorMsg);
+      return { latitude: coord.latitude, longitude: coord.longitude };
   } else if (location) {
-    text = JSON.stringify(location);
-    let lat = JSON.stringify(location.coords.latitude);
-    //console.log(lat);
-    const coord = location.coords;
-    //console.log(coord.latitude);
-    return { latitude: coord.latitude, longitude: coord.longitude };
+      const coord = location.coords;
+      return { latitude: coord.latitude, longitude: coord.longitude };
   } else {
-    return { latitude: coord.latitude, longitude: coord.longitude };
+      return { latitude: coord.latitude, longitude: coord.longitude };
   }
 }

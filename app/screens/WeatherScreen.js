@@ -10,7 +10,7 @@ import LocationService from "../utils/LocationService";
 import AddressService from "../utils/AddressService";
 
 export default function WeatherScreen({ navigation, route }) {
-  //const { latt } = route.params;
+
   React.useEffect(() => {
     if (route.params?.lat) {
       console.log(route.params?.lat);
@@ -21,30 +21,7 @@ export default function WeatherScreen({ navigation, route }) {
       console.log(route.params?.long);
     }
   }, [route.params?.long]);
-  //   React.useEffect(() => {
-  //     if (route.params?.city) {
-  //       console.log(route.params?.city);
-  //     }
-  //   }, [route.params?.city]);
 
-  // const fetchWeather = (lat, lon) => {
-  //     console.log("In the fetch Weather");
-  //     useEffect(() => {
-  //         fetch(
-  //             `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${API_KEY}&units=metric`
-  //         )
-  //             .then(res => res.json())
-  //             .then(json => {
-  //                 setWeatherState({
-  //                     isLoading: false,
-  //                     temperature: json.main.temp,
-  //                     weatherCondition: json.weather[0].main,
-  //                     error: null
-  //                 })
-  //         }, [])
-
-  //     });
-  // }
 
   const fetchWeather = (lat, lon) => {
     fetch(
@@ -61,41 +38,39 @@ export default function WeatherScreen({ navigation, route }) {
       });
   };
 
-  const initialWeatherState = {
-    isLoading: true,
-    temperature: 0,
-    weatherCondition: null,
-    error: null,
-  };
-  const [weatherState, setWeatherState] = useState(initialWeatherState);
 
-  let coords = LocationService();
-  let lat = coords.latitude;
-  let lon = coords.longitude;
-  let thecity = AddressService(lat, lon);
-  console.log(coords.latitude);
-  return (
-    <Screen style={styles.container}>
-      {weatherState.isLoading ? (
-        <AppButton
-          title="Load Weather Data"
-          onPress={() => fetchWeather(lat, lon)}
-        />
-      ) : (
-        <WeatherDetails
-          weather={weatherState.weatherCondition}
-          temperature={weatherState.temperature}
-        />
-      )}
-      <Text style={{ margin: 10 }}>Latitude: {route.params?.lon}</Text>
-      <Text style={{ margin: 10 }}>{thecity}</Text>
+    const initialWeatherState = {
+        isLoading: true,
+        temperature: 0,
+        weatherCondition: null,
+        error: null
+    }
+    const [weatherState, setWeatherState] = useState(initialWeatherState);
 
-      <Button
-        onPress={() =>
-          navigation.navigate("MyModal", {
-            screenName: "WeatherScreen",
-          })
-        }
+    let curLocation = LocationService();
+    let thecity = AddressService(curLocation.latitude, curLocation.longitude);
+
+
+    return (
+        <Screen style={styles.container}>
+            {weatherState.isLoading ? (
+                <AppButton title="Load Weather Data" onPress={()=> fetchWeather(lat, lon)} />
+
+            ): (
+                <WeatherDetails 
+                    weather = {weatherState.weatherCondition}
+                    temperature = {weatherState.temperature}
+                />
+            )}
+                            <Text style={{ margin: 10 }}>Latitude: {route.params?.lon}</Text>
+                            <Text style={{ margin: 10 }}>{thecity}</Text>
+
+
+               <Button
+        onPress={() => navigation.navigate('MyModal', {
+            screenName: 'WeatherScreen',
+          })}
+
         title="Open Modal"
       />
     </Screen>
