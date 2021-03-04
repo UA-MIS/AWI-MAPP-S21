@@ -26,7 +26,8 @@ const SafetyList = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     container: {
-        paddingHorizontal: 20
+        paddingHorizontal: 20,
+        flex: 1
     },
     item: {
         marginTop: 10,

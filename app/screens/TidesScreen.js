@@ -1,24 +1,19 @@
-
-import MapScreen from './MapScreen';
 import React, {Component, useEffect, useState} from 'react';
-import { Button, StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+
 import TideDetails from '../components/TideDetails';
 import AppButton from '../components/AppButton';
 import Screen from '../components/Screen';
 import LocationService from '../utils/LocationService';
+import TideStationService from '../utils/TideStationService';
 
 
-
-export default function TidesScreen() {
-  
-    let station = '8729840'
-    let locationName = 'Pensacola, FL'
-
+export default function TidesScreen({ navigation, route }) {
+    let station = '8729840';
+    let locationName = 'Pensacola, FL';
+    let beginDate= '20210302';
+    let endDate = '20210305';
     
-   
-
-    
-
     var myDate = new Date();
 
     var year = myDate.getFullYear();
@@ -34,11 +29,7 @@ export default function TidesScreen() {
     let startDate = year + month + day;
     let endDate = year + month + tom;
 
-
-
-
     const fetchTides = (station, locationName, startDate, endDate) => {
-
 
         const fetchUrl = `https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=${startDate}&end_date=${endDate}&station=${station}&product=predictions&datum=STND&time_zone=gmt&interval=hilo&units=english&format=json`;
 
@@ -69,24 +60,18 @@ export default function TidesScreen() {
     }
 
     const [tideState, setTideState] = useState(initialTideState);
-
-    
-
+  
     return (
         <Screen style={styles.container}>
             {tideState.isLoading ? (
                 <AppButton title="Today's Tides" onPress={()=> fetchTides(station,locationName, startDate, endDate)}  />
                 ):(
-                  
-                  
                    <TideDetails 
                         tideArray = {tideState.tideArray}
                         station ={tideState.station}
                         locationName = {tideState.locationName}
                         startDate = {tideState.startDate}
                         endDate = {tideState.endDate}
-
-                        
                     />
                 )}
         </Screen>
