@@ -11,8 +11,6 @@ import TideStationService from '../utils/TideStationService';
 export default function TidesScreen({ navigation, route }) {
     let station = '8729840';
     let locationName = 'Pensacola, FL';
-    let beginDate= '20210302';
-    let endDate = '20210305';
     
     var myDate = new Date();
 
