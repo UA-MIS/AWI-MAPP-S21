@@ -1,5 +1,5 @@
 import React, {Component, useEffect, useState} from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 
 import MapScreen from './MapScreen';
 import AppButton from '../components/AppButton';
@@ -10,6 +10,71 @@ import LocationService from '../utils/LocationService';
 import AddressService from '../utils/AddressService';
 
 
+export default function WeatherScreen({ navigation, route }) {
+
+    const initialWeatherState = {
+        isLoading: true,
+        dtCalled: '',
+        dtCalculated: '',
+        temperature: 0,
+        weatherCondition: null
+    }
+    const [weatherState, setWeatherState] = useState(initialWeatherState);
+
+    const [location, setLocation] = useState(LocationService());
+
+    const fetchWeather = async (lat, lon) => {
+
+        const response = await fetch (
+            `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${API_KEY}&units=imperial`
+        )
+        const json = await response.json();
+
+        setWeatherState({
+            isLoading: false,
+            dtCalled: Date.now(),
+            dtCalculated: json.dt,
+            temperature: json.main.temp,
+            weatherCondition: json.weather[0].main,
+        })
+    };
+
+    useEffect(() => {
+        fetchWeather(location.latitude, location.longitude);
+    }, [location.latitude, location.longitude]);
+
+    return (
+        <View style={styles.container}>
+            {weatherState.isLoading ? (
+                <ActivityIndicator
+                    size='large'
+                    loading={weatherState.isLoading}
+                />
+            ) : (
+                <View>
+                    <Text onPress={() => fetchWeather(location.latitude, location.longitude)}>Current temperature: {weatherState.temperature}</Text>
+                    <Text>Datetime: {weatherState.dtCalled}</Text>
+                </View>
+            )}
+        </View>
+    );
+}
+
+
+const styles = StyleSheet.create({
+    container:{
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
+})
+
+
+
+
+
+/*
 export default function WeatherScreen({navigation, route}) {
     //const { latt } = route.params;
    React.useEffect(() => {
@@ -109,3 +174,4 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     }
 })
+*/
