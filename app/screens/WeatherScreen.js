@@ -18,6 +18,7 @@ export default function WeatherScreen({ navigation, route }) {
         temperature: 0,
         weatherCondition: null
     }
+    
     const [weatherState, setWeatherState] = useState(initialWeatherState);
 
     const [location, setLocation] = useState(LocationService());
