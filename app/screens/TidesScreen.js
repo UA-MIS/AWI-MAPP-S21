@@ -12,8 +12,12 @@ import LocationService from '../utils/LocationService';
 export default function TidesScreen() {
   
     let station = '8729840'
-
     let locationName = 'Pensacola, FL'
+
+    
+   
+
+    
 
     var myDate = new Date();
 
@@ -29,6 +33,8 @@ export default function TidesScreen() {
         tom = '0'+tom;
     let startDate = year + month + day;
     let endDate = year + month + tom;
+
+
 
 
     const fetchTides = (station, locationName, startDate, endDate) => {
@@ -72,6 +78,7 @@ export default function TidesScreen() {
                 <AppButton title="Today's Tides" onPress={()=> fetchTides(station,locationName, startDate, endDate)}  />
                 ):(
                   
+                  
                    <TideDetails 
                         tideArray = {tideState.tideArray}
                         station ={tideState.station}
@@ -79,6 +86,7 @@ export default function TidesScreen() {
                         startDate = {tideState.startDate}
                         endDate = {tideState.endDate}
 
+                        
                     />
                 )}
         </Screen>

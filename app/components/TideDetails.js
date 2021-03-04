@@ -6,13 +6,30 @@ import DatePicker from 'react-native-datepicker';
 
 function TideDetails({ station, locationName, tideArray, startDate, endDate}) {
 
-    if(tideArray.type == "L"){
-        tideArray.type == "Low Tide"
+   
+
+    var s = tideArray[0].t.replace(" ", "T") ;
+    s= s.concat(":00");
+    console.log(s);
+
+
+
+    var d = new Date(s);
+    console.log(d.getDay());
+
+
+for(let i = 0; i < tideArray.length; i++){
+    if(tideArray.type === "L"){
+        tideArray.type = "Low Tide"
     }else{
-        tideArray.type == "High Tide"
+        tideArray.type = "High Tide"
     }
+}
+
+    
     return (
       <ScrollView>
+             
             <View style={styles.container}>
                 <Text style={{fontWeight: "bold", textAlign: 'center', fontSize: 20}}>Station: {station} {locationName}</Text>
                 <Text style={{fontWeight: "bold", textAlign: 'center', fontSize: 18}}>Current Tides{'\n'}</Text>
@@ -45,7 +62,7 @@ function TideDetails({ station, locationName, tideArray, startDate, endDate}) {
                 <Text style={styles.textContainer}>Next tide change at: <Text style={styles.dataContainer}> {tideArray[13].t} </Text></Text>
                 <Text style={styles.textContainer}>Tide Change: <Text style={styles.dataContainer}>{tideArray[13].v} ft {tideArray[3].type}{'\n'}</Text></Text>
                 
-            </View>
+          </View>
             {/*
             <View style={styles.forecastContainer}>
                 <Text style={{fontWeight: 'bold', textAlign: 'center', fontSize: 20}}>Choose Date</Text>
@@ -90,23 +107,24 @@ function TideDetails({ station, locationName, tideArray, startDate, endDate}) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        borderRadius: 8, 
+        paddingHorizontal: 20,
         marginBottom: 3, 
         marginTop: 3,
-        borderWidth: 3, 
-        width: 385,  
-        backgroundColor: '#D1E2D2', 
+        width: 350,  
+        backgroundColor: '#d3d3d3',
+        borderLeftColor: '#696969',
+        borderLeftWidth: 3 
         
 	},
     textContainer:{
-        fontSize: 18,
+        fontSize: 20,
         fontWeight: 'bold',
-        marginLeft: 5
+        marginLeft: 1
         
     },
     dataContainer:{
-        fontSize: 15,
-        color: 'red'
+        fontSize: 17,
+        color: 'black'
     },
 
     forecastContainer: {
