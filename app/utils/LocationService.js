@@ -38,15 +38,15 @@ export default function LocationService() {
     text = errorMsg;
     alert(errorMsg);
 
-    return { coord };
+    return { latitude: coord.latitude, longitude: coord.longitude };
   } else if (location) {
     text = JSON.stringify(location);
     let lat = JSON.stringify(location.coords.latitude);
     //console.log(lat);
     const coord = location.coords;
     //console.log(coord.latitude);
-    return { coord };
+    return { latitude: coord.latitude, longitude: coord.longitude };
   } else {
-    return { coord };
+    return { latitude: coord.latitude, longitude: coord.longitude };
   }
 }

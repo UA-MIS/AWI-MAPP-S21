@@ -70,10 +70,10 @@ export default function WeatherScreen({ navigation, route }) {
   const [weatherState, setWeatherState] = useState(initialWeatherState);
 
   let coords = LocationService();
-  let lat = coords.coord.latitude;
-  let lon = coords.coord.longitude;
+  let lat = coords.latitude;
+  let lon = coords.longitude;
   let thecity = AddressService(lat, lon);
-  console.log(coords.coord.latitude);
+  console.log(coords.latitude);
   return (
     <Screen style={styles.container}>
       {weatherState.isLoading ? (
