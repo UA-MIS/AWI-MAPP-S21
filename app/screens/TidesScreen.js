@@ -10,75 +10,70 @@ import TideStationService from '../utils/TideStationService';
 
 export default function TidesScreen({ navigation, route }) {
     let station = '8729840';
+    let locationName = 'Pensacola, FL';
     let beginDate= '20210302';
     let endDate = '20210305';
+    
+    var myDate = new Date();
 
-    console.log('Closest station: ');
-    console.log(TideStationService());
+    var year = myDate.getFullYear();
+    var month = myDate.getMonth() + 1;
+      if(month <= 9)
+        month = '0'+month;
+    var day= myDate.getDate();
+      if(day <= 9)
+        day = '0'+day;
+    var tom = myDate.getDate()+8;
+      if(tom <= 9)
+        tom = '0'+tom;
+    let startDate = year + month + day;
+    let endDate = year + month + tom;
 
-    React.useEffect(() => {
-        if (route.params?.lat) {
-          console.log(route.params?.lat);
-        }
-      }, [route.params?.lat]);
-      React.useEffect(() => {
-        if (route.params?.long) {
-          console.log(route.params?.long);
-        }
-      }, [route.params?.long]);
-   
-    const fetchTides = (station, beginDate, endDate) => {
+    const fetchTides = (station, locationName, startDate, endDate) => {
 
-        const fetchUrl = `https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=${beginDate}&end_date=${endDate}&station=${station}&product=predictions&datum=STND&time_zone=gmt&interval=hilo&units=english&format=json`;
+        const fetchUrl = `https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=${startDate}&end_date=${endDate}&station=${station}&product=predictions&datum=STND&time_zone=gmt&interval=hilo&units=english&format=json`;
 
         fetch(fetchUrl)
         
         .then(res => res.json())
         .then(json => {
-            console.log(json);
-            
             setTideState({
                 isLoading: false,
                 station: station,
-                day: json.predictions[0].t,
-                highTide: json.predictions[0].v,
-                lowTide: json.predictions[0].v,
+                locationName: locationName,
+                tideArray: json.predictions,
+                startDate: startDate, //--------??
+                endDate: endDate,
                 error: null
             })      
-        })  
+        })
     }
   
     const initialTideState = {
         isLoading: true,
-        day: null,
-        highTide: 0,
-        lowTide: 0,
-        error: null
+        station: null,
+        locationName: null,
+        tideArray: null,
+        startDate: '0',
+        endDate: '0',
+        error: null,
     }
 
     const [tideState, setTideState] = useState(initialTideState);
-
-
+  
     return (
         <Screen style={styles.container}>
-           {/* {tideState.isLoading ? (
-                <AppButton title="Today's Tides" onPress={()=> fetchTides(station, beginDate, endDate)}  />
+            {tideState.isLoading ? (
+                <AppButton title="Today's Tides" onPress={()=> fetchTides(station,locationName, startDate, endDate)}  />
                 ):(
-                  
                    <TideDetails 
-                         station = {tideState.station}
-                        day = {tideState.day}
-                         highTide = {tideState.highTide}
-                         lowTide = {tideState.lowTide}
-                       />
-                )}*/}
-            <AppButton
-                onPress={() => navigation.navigate('MyModal', {
-                    screenName: 'TidesScreen',
-                })}
-                title="Open Modal"
-            />
-            <Text style={{ margin: 10 }}>Latitude: {route.params?.lat}</Text>
+                        tideArray = {tideState.tideArray}
+                        station ={tideState.station}
+                        locationName = {tideState.locationName}
+                        startDate = {tideState.startDate}
+                        endDate = {tideState.endDate}
+                    />
+                )}
         </Screen>
     );
 }
