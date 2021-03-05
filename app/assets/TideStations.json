@@ -2024,13 +2024,6 @@
             "predictions": "Subordinate"
         },
         {
-            "Location": "Little Torch Key, Pine Channel Bridge, south side",
-            "station number": "8724224",
-            "lat": "24.665",
-            "long": "-81.3867",
-            "predictions": "Subordinate"
-        },
-        {
             "Location": "Big Pine Key, Pine Channel Bridge, south side",
             "station number": "8724213",
             "lat": "24.6683",
@@ -2883,9 +2876,6 @@
             "lat": "27.4667",
             "long": "-82.6867",
             "predictions": "Subordinate"
-        },
-        {
-            "Location": "Tampa Bay"
         },
         {
             "Location": "Egmont Key, Egmont Channel",

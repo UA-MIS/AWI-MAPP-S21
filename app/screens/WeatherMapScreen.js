@@ -6,7 +6,7 @@ import { HeaderBackButton } from 'react-navigation-stack';
 import Screen from '../components/Screen';
 
 
-export default function MapScreen({ navigation, route }) {
+export default function TidesMapScreen({ navigation, route }) {
 
     const { initLocation, previousScreen } = route.params;
 

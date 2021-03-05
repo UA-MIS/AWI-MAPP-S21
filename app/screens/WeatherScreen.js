@@ -55,7 +55,7 @@ export default function WeatherScreen({ navigation, route }) {
                 <View style={styles.rightHeaderButton}>
                     <TouchableOpacity
                         onPress={() => navigation.navigate(
-                            'MapScreen',
+                            'WeatherMapScreen',
                             { initLocation: location, previousScreen: 'WeatherScreen' }
                         )}
                     >
@@ -68,8 +68,6 @@ export default function WeatherScreen({ navigation, route }) {
             )
         });
     }, [location]);
-
-    setLocation // FIX ME FIX ME FIX ME FIX ME FIX ME FIX ME FIX ME FIX ME FIX ME FIX ME
 
     // Watch for updates to location from map
     useEffect(() => {

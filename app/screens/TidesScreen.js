@@ -1,3 +1,125 @@
+import React, {useEffect, useState} from 'react';
+import { ActivityIndicator, FlatList, StyleSheet, Text, View } from 'react-native';
+import TideDetails from '../components/TideDetails';
+import AppButton from '../components/AppButton';
+import Screen from '../components/Screen';
+ 
+export default function TidesScreen({ route }) {
+    const theStation = {
+        stationName: route.params.Location,
+        stationNumber: route.params['station number'],
+        latitude: route.params.lat,
+        longitude: route.params.long,
+        predictions: route.params.predictions
+    };
+
+    let station = theStation.stationNumber;
+
+    function initDates() {
+        let myDate = new Date();
+
+        let year = myDate.getFullYear();
+        let month = myDate.getMonth() + 1;
+
+        if (month <= 9) {
+            month = '0' + month;
+        }
+
+        let day = myDate.getDate();
+
+        if (day <= 9) {
+            day = '0' + day;
+        }
+        let tom = myDate.getDate() + 8;
+
+        if (tom <= 9) {
+            tom = '0' + tom;
+        }
+
+        let startDate = year + month + day;
+        let endDate = year + month + tom;
+
+        return {
+            startDate: startDate,
+            endDate: endDate
+        };
+    }
+
+    let { startDate, endDate } = initDates();
+ 
+    const fetchTides = (station, startDate, endDate) => {
+        const fetchUrl = `https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=${startDate}&end_date=${endDate}&station=${station}&product=predictions&datum=STND&time_zone=lst_ldt&interval=hilo&units=english&format=json`;
+        fetch(fetchUrl)           
+            .then(res => res.json())
+            .then(json => {
+                const updatedState = {
+                    tidesData: json.predictions,
+                    isLoading: false,
+                    error: null
+                }
+                setTidesState(updatedState);
+            });
+    }
+  
+    const initialTidesState = {
+        tidesData: [],
+        isLoading: true,
+        error: null
+    }
+ 
+    const [tidesState, setTidesState] = useState(initialTidesState);
+
+    useEffect(() => {
+
+        fetchTides(station, startDate, endDate);
+    }, []);
+ 
+    return (
+        <Screen style={styles.container}>
+            {tidesState.isLoading ? (
+                    <View>
+                        <Text>Loading tides...</Text>
+                        <ActivityIndicator
+                            size='large'
+                            loading={tidesState.isLoading}
+                        />
+                    </View>
+                ):(
+                    <TideDetails 
+                        tideArray = {tidesState.tidesData}
+                        station = {theStation.stationNumber}
+                        locationName = {theStation.stationName}
+                        startDate = {startDate}
+                        endDate = {endDate}
+                    />
+                    // tideState.tideData.map((data)=> {
+                    //     return (
+                    //         <TideDetails 
+                    //             key={data.t}
+                    //             station={station}
+                    //             time={data.t}
+                    //             type={data.type}
+                    //             tide={data.v}
+                    //         />
+                    //     )
+                    // })
+                )}
+            
+        </Screen>
+    );
+}
+ 
+const styles = StyleSheet.create({
+    container:{
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
+})
+
+
+/*
 import React, {Component, useEffect, useLayoutEffect, useState} from 'react';
 import { ActivityIndicator, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
@@ -170,93 +292,4 @@ const styles = StyleSheet.create({
         marginRight: 30
     }
 });
-
-
-
-/*
-export default function TidesScreen({ navigation, route }) {
-    let station = '8729840';
-    let locationName = 'Pensacola, FL';
-    
-    var myDate = new Date();
-
-    var year = myDate.getFullYear();
-    var month = myDate.getMonth() + 1;
-
-    if (month <= 9) {
-        month = '0'+month;
-    }
-
-    var day= myDate.getDate();
-
-    if (day <= 9) {
-        day = '0'+day;
-    }
-    var tom = myDate.getDate() + 8;
-
-    if (tom <= 9) {
-        tom = '0'+tom;
-    }
-
-    let startDate = year + month + day;
-    let endDate = year + month + tom;
-
-    const fetchTides = (station, locationName, startDate, endDate) => {
-
-        const fetchUrl = `https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=${startDate}&end_date=${endDate}&station=${station}&product=predictions&datum=STND&time_zone=gmt&interval=hilo&units=english&format=json`;
-
-        fetch(fetchUrl)
-        
-        .then(res => res.json())
-        .then(json => {
-            setTideState({
-                isLoading: false,
-                station: station,
-                locationName: locationName,
-                tideArray: json.predictions,
-                startDate: startDate, //--------??
-                endDate: endDate,
-                error: null
-            })      
-        })
-    }
-  
-    const initialTideState = {
-        isLoading: true,
-        station: null,
-        locationName: null,
-        tideArray: null,
-        startDate: '0',
-        endDate: '0',
-        error: null,
-    }
-
-    const [tideState, setTideState] = useState(initialTideState);
-  
-    return (
-        <Screen style={styles.container}>
-            {tideState.isLoading ? (
-                <AppButton title="Today's Tides" onPress={()=> fetchTides(station,locationName, startDate, endDate)}  />
-                ):(
-                   <TideDetails 
-                        tideArray = {tideState.tideArray}
-                        station ={tideState.station}
-                        locationName = {tideState.locationName}
-                        startDate = {tideState.startDate}
-                        endDate = {tideState.endDate}
-                    />
-                )}
-        </Screen>
-    );
-}
-
-const styles = StyleSheet.create({
-    container:{
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center'
-    }
-})
 */
-
