@@ -30,11 +30,11 @@ export default function WeatherScreen({ navigation, route }) {
   const fetchWeather = (lat, lon) => {
     console.log("In the fetch Weather");
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${API_KEY}&units=metric`
+      `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${API_KEY}&units=imperial`
     )
       .then((res) => res.json())
       .then((json) => {
-        var t = Math.round(1.8 * json.main.temp + 32);
+        var t = Math.round(json.main.temp);
         setWeatherState({
           isLoading: false,
           temperature: t,
