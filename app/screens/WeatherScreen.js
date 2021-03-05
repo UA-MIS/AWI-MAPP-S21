@@ -24,7 +24,6 @@ export default function WeatherScreen({ navigation, route }) {
     const [location, setLocation] = useState(LocationService());
 
     const fetchWeather = async (lat, lon) => {
-
         const response = await fetch (
             `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${API_KEY}&units=imperial`
         )
@@ -55,7 +54,10 @@ export default function WeatherScreen({ navigation, route }) {
             headerRight: () => (
                 <View style={styles.rightHeaderButton}>
                     <TouchableOpacity
-                        onPress={() => navigation.navigate('WeatherMapScreen', { initLocation: location })}
+                        onPress={() => navigation.navigate(
+                            'MapScreen',
+                            { initLocation: location, previousScreen: 'WeatherScreen' }
+                        )}
                     >
                         <Icon
                             name='location'
@@ -67,7 +69,7 @@ export default function WeatherScreen({ navigation, route }) {
         });
     }, [location]);
 
-    setLocation
+    setLocation // FIX ME FIX ME FIX ME FIX ME FIX ME FIX ME FIX ME FIX ME FIX ME FIX ME
 
     // Watch for updates to location from map
     useEffect(() => {
@@ -84,10 +86,13 @@ export default function WeatherScreen({ navigation, route }) {
     return (
         <View style={styles.container}>
             {weatherState.isLoading ? (
-                <ActivityIndicator
-                    size='large'
-                    loading={weatherState.isLoading}
-                />
+                    <View>
+                    <ActivityIndicator
+                        size='large'
+                        loading={weatherState.isLoading}
+                    />
+                    <Text>Loading weather data</Text>
+                </View>
             ) : (
                 <View>
                     <Text>Current temperature: {weatherState.temperature}</Text>

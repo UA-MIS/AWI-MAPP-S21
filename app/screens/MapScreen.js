@@ -6,9 +6,9 @@ import { HeaderBackButton } from 'react-navigation-stack';
 import Screen from '../components/Screen';
 
 
-export default function WeatherMapScreen({ navigation, route }) {
+export default function MapScreen({ navigation, route }) {
 
-    const { initLocation } = route.params;
+    const { initLocation, previousScreen } = route.params;
 
     const handleMapPress = (event) => {
         
@@ -34,7 +34,7 @@ export default function WeatherMapScreen({ navigation, route }) {
         navigation.setOptions({
             headerLeft: () => (
                 <HeaderBackButton onPress={() => {
-                    navigation.navigate('WeatherScreen', {
+                    navigation.navigate(previousScreen, {
                         location: mapState.location
                     });
                 }}/>

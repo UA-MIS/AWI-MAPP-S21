@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import WeatherScreen from '../screens/WeatherScreen';
-import WeatherMapScreen from '../screens/WeatherMapScreen';
+import MapScreen from '../screens/MapScreen';
 import TidesScreen from '../screens/TidesScreen';
 import SafetyScreen from '../screens/SafetyScreen';
 import SafetyItemScreen from '../screens/SafetyItemScreen';
@@ -74,8 +74,8 @@ function WeatherNavigator() {
                 options={{ headerTitle: 'Weather' }}
             />
             <WeatherStack.Screen
-                name="WeatherMapScreen"
-                component={WeatherMapScreen}
+                name="MapScreen"
+                component={MapScreen}
                 options={{ headerTitle: 'Select a Location...' }}
             />
         </WeatherStack.Navigator> 
@@ -91,6 +91,11 @@ function TidesNavigator() {
                 name="TidesScreen"
                 component={TidesScreen}
                 options={{ headerTitle: 'Tides' }}
+            />
+            <TidesStack.Screen
+                name='MapScreen'
+                component={MapScreen}
+                options={{ headerTitle: 'Select a Location...' }}
             />
         </TidesStack.Navigator> 
     );
