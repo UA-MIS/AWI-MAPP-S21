@@ -4,7 +4,6 @@ import MapView from "react-native-maps";
 import { HeaderBackButton } from "react-navigation-stack";
 
 import Screen from "../components/Screen";
-import TideStations from "../assets/TideStations.json";
 
 export default function WeatherMapScreen({ navigation, route }) {
   const { initLocation } = route.params;
@@ -66,20 +65,6 @@ export default function WeatherMapScreen({ navigation, route }) {
           title="Location"
           description="Your Current Location"
         />
-        {TideStations.TideStations.map((markerData) => {
-          var lat = parseFloat(markerData.lat);
-          var long = parseFloat(markerData.long);
-          return (
-            <MapView.Marker
-              key={markerData.stationnumber}
-              coordinate={{
-                latitude: lat,
-                longitude: long,
-              }}
-              title={markerData.Location}
-            />
-          );
-        })}
       </MapView>
     </Screen>
   );
