@@ -1,4 +1,9 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, {
+  useEffect,
+  useLayoutEffect,
+  useState,
+  useCallback,
+} from "react";
 import {
   ActivityIndicator,
   StyleSheet,
@@ -27,13 +32,40 @@ export default function WeatherScreen({ navigation, route }) {
 
   const [location, setLocation] = useState(LocationService());
 
-  //ORIGINAL
-  //let city = AddressService(location);
-  let city;
-  useEffect(() => {
+  var city;
+  const addressFinder = async () => {
+    console.log("inside address finder");
+    let errorMsg = null;
     if (location) {
-      city = AddressService(location);
+      const { granted } = await Location.requestPermissionsAsync();
+      if (!granted) {
+        errorMsg = "Permission denied";
+        return;
+      }
     }
+
+    if (location) {
+      console.log("passed the location if");
+      let tempAddress = await Location.reverseGeocodeAsync(location);
+
+      let city = "waiting..";
+      if (errorMsg) {
+        city = errorMsg;
+      } else if (tempAddress) {
+        // text=JSON.stringify(address)
+        if (tempAddress[0].city !== null) {
+          city = tempAddress[0].city;
+        } else if (tempAddress[0].name !== null) {
+          city = tempAddress[0].name;
+        } else {
+          city = lat + " " + lon;
+        }
+      }
+      console.log(city);
+    }
+  };
+  useEffect(() => {
+    addressFinder();
   }, [location]);
 
   const fetchWeather = async (lat, lon) => {
@@ -92,6 +124,7 @@ export default function WeatherScreen({ navigation, route }) {
   useEffect(() => {
     fetchWeather(location.latitude, location.longitude);
   }, [location.latitude, location.longitude]);
+  //let city = AddressService(location);
 
   return (
     <View style={styles.container}>
