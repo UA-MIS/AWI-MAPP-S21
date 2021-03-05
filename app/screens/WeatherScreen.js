@@ -18,6 +18,7 @@ import { API_KEY } from "../utils/WeatherApiKey";
 import LocationService from "../utils/LocationService";
 import AddressService from "../utils/AddressService";
 import { Icon } from "../hooks/useCachedResources";
+import * as Location from "expo-location";
 
 export default function WeatherScreen({ navigation, route }) {
   const initialWeatherState = {
@@ -32,7 +33,11 @@ export default function WeatherScreen({ navigation, route }) {
 
   const [location, setLocation] = useState(LocationService());
 
-  var city;
+  const initialCityState = {
+    isLoading: true,
+    cityName: "",
+  };
+  const [city, setCity] = useState(initialCityState);
   const addressFinder = async () => {
     console.log("inside address finder");
     let errorMsg = null;
@@ -48,22 +53,35 @@ export default function WeatherScreen({ navigation, route }) {
       console.log("passed the location if");
       let tempAddress = await Location.reverseGeocodeAsync(location);
 
-      let city = "waiting..";
+      city = "waiting..";
       if (errorMsg) {
-        city = errorMsg;
+        setCity({
+          isLoading: false,
+          cityName: errorMsg,
+        });
       } else if (tempAddress) {
         // text=JSON.stringify(address)
         if (tempAddress[0].city !== null) {
-          city = tempAddress[0].city;
+          setCity({
+            isLoading: false,
+            cityName: tempAddress[0].city,
+          });
         } else if (tempAddress[0].name !== null) {
-          city = tempAddress[0].name;
+          setCity({
+            isLoading: false,
+            cityName: tempAddress[0].name,
+          });
         } else {
-          city = lat + " " + lon;
+          setCity({
+            isLoading: false,
+            cityName: lat + " " + lon,
+          });
         }
       }
-      console.log(city);
+      console.log(city.cityName);
     }
   };
+  console.log(city.cityName);
   useEffect(() => {
     addressFinder();
   }, [location]);
@@ -132,7 +150,12 @@ export default function WeatherScreen({ navigation, route }) {
         <ActivityIndicator size="large" loading={weatherState.isLoading} />
       ) : (
         <View>
-          <Text>{city}</Text>
+          {city.isLoading ? (
+            <Text>Loading City Data</Text>
+          ) : (
+            <Text>{city.cityName}</Text>
+          )}
+
           <Text>Current temperature: {weatherState.temperature}</Text>
           <Text>Datetime: {weatherState.dtCalled}</Text>
         </View>
