@@ -26,7 +26,7 @@ export default function WeatherScreen({ navigation, route }) {
     const fetchWeather = async (lat, lon) => {
 
         const response = await fetch (
-            `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${API_KEY}&units=imperial`
+            `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&APPID=${API_KEY}&units=imperial`
         )
         const json = await response.json();
 
@@ -34,8 +34,8 @@ export default function WeatherScreen({ navigation, route }) {
             isLoading: false,
             dtCalled: Date.now(),
             dtCalculated: json.dt,
-            temperature: json.main.temp,
-            weatherCondition: json.weather[0].main,
+            currentWeather: json.current,
+            dailyWeather: json.daily,
         })
     };
 
@@ -80,6 +80,7 @@ export default function WeatherScreen({ navigation, route }) {
     useEffect(() => {
         fetchWeather(location.latitude, location.longitude);
     }, [location.latitude, location.longitude]);
+    let city = AddressService(location);
 
     return (
         <View style={styles.container}>
@@ -90,8 +91,88 @@ export default function WeatherScreen({ navigation, route }) {
                 />
             ) : (
                 <View>
-                    <Text>Current temperature: {weatherState.temperature}</Text>
-                    <Text>Datetime: {weatherState.dtCalled}</Text>
+                    <View>
+                        <Text>{city}</Text>
+                        <Text>Datetime: {weatherState.dtCalled}</Text>
+                        <Text>Current Temperature: {weatherState.currentWeather.temp}</Text>
+                        <Text>Wind Speed: {weatherState.currentWeather.wind_speed}</Text>
+                        <Text>Wind Degree: {weatherState.currentWeather.wind_deg}</Text>
+                        <Text>Air Pressure: {weatherState.currentWeather.pressure}</Text>
+                        <Text>Visibility: {weatherState.currentWeather.visibility}</Text>
+                        <Text>Dew Point: {weatherState.currentWeather.dew_point}</Text>
+                    </View>
+                    <View>
+                        <Text>Date: {weatherState.dailyWeather[1].dt}</Text>
+                        <Text>Current Temperature: {weatherState.dailyWeather[1].temp}</Text>
+                        <Text>Wind Speed: {weatherState.dailyWeather[1].wind_speed}</Text>
+                        <Text>Wind Degree: {weatherState.dailyWeather[1].wind_deg}</Text>
+                        <Text>Air Pressure: {weatherState.dailyWeather[1].pressure}</Text>
+                        <Text>Visibility: {weatherState.dailyWeather[1].visibility}</Text>
+                        <Text>Dew Point: {weatherState.dailyWeather[1].dew_point}</Text>
+                    </View>
+                    <View>
+                        <Text>Date: {weatherState.dailyWeather[2].dt}</Text>
+                        <Text>Current Temperature: {weatherState.dailyWeather[2].temp}</Text>
+                        <Text>Wind Speed: {weatherState.dailyWeather[2].wind_speed}</Text>
+                        <Text>Wind Degree: {weatherState.dailyWeather[2].wind_deg}</Text>
+                        <Text>Air Pressure: {weatherState.dailyWeather[2].pressure}</Text>
+                        <Text>Visibility: {weatherState.dailyWeather[2].visibility}</Text>
+                        <Text>Dew Point: {weatherState.dailyWeather[2].dew_point}</Text>
+                    </View>
+                    <View>
+                        <Text>Date: {weatherState.dailyWeather[3].dt}</Text>
+                        <Text>Current Temperature: {weatherState.dailyWeather[3].temp}</Text>
+                        <Text>Wind Speed: {weatherState.dailyWeather[3].wind_speed}</Text>
+                        <Text>Wind Degree: {weatherState.dailyWeather[3].wind_deg}</Text>
+                        <Text>Air Pressure: {weatherState.dailyWeather[3].pressure}</Text>
+                        <Text>Visibility: {weatherState.dailyWeather[3].visibility}</Text>
+                        <Text>Dew Point: {weatherState.dailyWeather[3].dew_point}</Text>
+                    </View>
+                    <View>
+                        <Text>Date: {weatherState.dailyWeather[4].dt}</Text>
+                        <Text>Current Temperature: {weatherState.dailyWeather[4].temp}</Text>
+                        <Text>Wind Speed: {weatherState.dailyWeather[4].wind_speed}</Text>
+                        <Text>Wind Degree: {weatherState.dailyWeather[4].wind_deg}</Text>
+                        <Text>Air Pressure: {weatherState.dailyWeather[4].pressure}</Text>
+                        <Text>Visibility: {weatherState.dailyWeather[4].visibility}</Text>
+                        <Text>Dew Point: {weatherState.dailyWeather[4].dew_point}</Text>
+                    </View>
+                    <View>
+                        <Text>Date: {weatherState.dailyWeather[5].dt}</Text>
+                        <Text>Current Temperature: {weatherState.dailyWeather[5].temp}</Text>
+                        <Text>Wind Speed: {weatherState.dailyWeather[5].wind_speed}</Text>
+                        <Text>Wind Degree: {weatherState.dailyWeather[5].wind_deg}</Text>
+                        <Text>Air Pressure: {weatherState.dailyWeather[5].pressure}</Text>
+                        <Text>Visibility: {weatherState.dailyWeather[5].visibility}</Text>
+                        <Text>Dew Point: {weatherState.dailyWeather[5].dew_point}</Text>
+                    </View>
+                    <View>
+                        <Text>Date: {weatherState.dailyWeather[6].dt}</Text>
+                        <Text>Current Temperature: {weatherState.dailyWeather[6].temp}</Text>
+                        <Text>Wind Speed: {weatherState.dailyWeather[6].wind_speed}</Text>
+                        <Text>Wind Degree: {weatherState.dailyWeather[6].wind_deg}</Text>
+                        <Text>Air Pressure: {weatherState.dailyWeather[6].pressure}</Text>
+                        <Text>Visibility: {weatherState.dailyWeather[6].visibility}</Text>
+                        <Text>Dew Point: {weatherState.dailyWeather[6].dew_point}</Text>
+                    </View>
+                    <View>
+                        <Text>Date: {weatherState.dailyWeather[7].dt}</Text>
+                        <Text>Current Temperature: {weatherState.dailyWeather[7].temp}</Text>
+                        <Text>Wind Speed: {weatherState.dailyWeather[7].wind_speed}</Text>
+                        <Text>Wind Degree: {weatherState.dailyWeather[7].wind_deg}</Text>
+                        <Text>Air Pressure: {weatherState.dailyWeather[7].pressure}</Text>
+                        <Text>Visibility: {weatherState.dailyWeather[7].visibility}</Text>
+                        <Text>Dew Point: {weatherState.dailyWeather[7].dew_point}</Text>
+                    </View>
+                    <View>
+                        <Text>Date: {weatherState.dailyWeather[8].dt}</Text>
+                        <Text>Current Temperature: {weatherState.dailyWeather[8].temp}</Text>
+                        <Text>Wind Speed: {weatherState.dailyWeather[8].wind_speed}</Text>
+                        <Text>Wind Degree: {weatherState.dailyWeather[8].wind_deg}</Text>
+                        <Text>Air Pressure: {weatherState.dailyWeather[8].pressure}</Text>
+                        <Text>Visibility: {weatherState.dailyWeather[8].visibility}</Text>
+                        <Text>Dew Point: {weatherState.dailyWeather[8].dew_point}</Text>
+                    </View>
                 </View>
             )}
         </View>
