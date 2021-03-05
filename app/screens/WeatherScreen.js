@@ -27,6 +27,15 @@ export default function WeatherScreen({ navigation, route }) {
 
   const [location, setLocation] = useState(LocationService());
 
+  //ORIGINAL
+  //let city = AddressService(location);
+  let city;
+  useEffect(() => {
+    if (location) {
+      city = AddressService(location);
+    }
+  }, [location]);
+
   const fetchWeather = async (lat, lon) => {
     const response = await fetch(
       `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${API_KEY}&units=imperial`
@@ -83,7 +92,6 @@ export default function WeatherScreen({ navigation, route }) {
   useEffect(() => {
     fetchWeather(location.latitude, location.longitude);
   }, [location.latitude, location.longitude]);
-  let city = AddressService(location);
 
   return (
     <View style={styles.container}>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { StyleSheet, View, Platform, Text } from "react-native";
 import * as Location from "expo-location";
 
-function AddressFinder(location) {
+export default function AddressFinder(location) {
   const [address, setAddress] = useState(null);
   const [errorMsg, setErrorMsg] = useState(null);
 
@@ -48,5 +48,3 @@ function AddressFinder(location) {
 const styles = StyleSheet.create({
   conatiner: {},
 });
-
-export default AddressFinder;
