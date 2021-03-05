@@ -34,9 +34,10 @@ export default function WeatherScreen({ navigation, route }) {
     )
       .then((res) => res.json())
       .then((json) => {
+        var t = Math.round(1.8 * json.main.temp + 32);
         setWeatherState({
           isLoading: false,
-          temperature: json.main.temp,
+          temperature: t,
           weatherCondition: json.weather[0].main,
           error: null,
         });
