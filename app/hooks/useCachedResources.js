@@ -1,12 +1,14 @@
-import { Ionicons } from '@expo/vector-icons';
 import * as Font from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import * as React from 'react';
 
+import { createIconSetFromFontello } from '@expo/vector-icons';
+import fontelloConfig from '../assets/fonts/config.json';
+
 export default function useCachedResources() {
     const [isLoadingComplete, setLoadingComplete] = React.useState(false);
 
-    // Load any resources or data that we need prior to rendering the app
+    // Load any resources or data needed prior to rendering the app
     React.useEffect(() => {
         async function loadResourcesAndDataAsync() {
             try {
@@ -14,8 +16,8 @@ export default function useCachedResources() {
 
                 // Load fonts
                 await Font.loadAsync({
-                    ...Ionicons.font,
-                    'space-mono': require('../assets/fonts/SpaceMono-Regular.ttf'),
+                    'fontello': require('../assets/fonts/fontello.ttf'),
+                    'space-mono': require('../assets/fonts/SpaceMono-Regular.ttf')
                 });
             } catch (e) {
                 // We might want to provide this error information to an error reporting service
@@ -31,3 +33,5 @@ export default function useCachedResources() {
 
     return isLoadingComplete;
 }
+
+export const Icon = createIconSetFromFontello(fontelloConfig, 'fontello', 'fontello.ttf')

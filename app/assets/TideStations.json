@@ -1,0 +1,3777 @@
+{
+    "TideStations": [
+        {
+            "Location": "Alabama Point",
+            "station number": "8730667",
+            "lat": "30.2786",
+            "long": "-87.555",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Mobile Point (Fort Morgan)",
+            "station number": "8734635",
+            "lat": "30.2333",
+            "long": "-88.02",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Gulf Shores, ICWW",
+            "station number": "8731439",
+            "lat": "30.2799",
+            "long": "-87.6843",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Bon Secour, Bon Secour River",
+            "station number": "8731952",
+            "lat": "30.3033",
+            "long": "-87.735",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "DAUPHIN ISLAND",
+            "station number": "8735180",
+            "lat": "30.25",
+            "long": "-88.075",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "East Fowl River, Hwy 193 Bridge",
+            "station number": "8735523",
+            "lat": "30.4436",
+            "long": "-88.1139",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "West Fowl River, Hwy 188 bridge",
+            "station number": "8738043",
+            "lat": "30.3766",
+            "long": "-88.1586",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Point Clear, Mobile Bay",
+            "station number": "8733821",
+            "lat": "30.4866",
+            "long": "-87.9345",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Dog River Bridge",
+            "station number": "8735391",
+            "lat": "30.5652",
+            "long": "-88.088",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Coast Guard Sector Mobile",
+            "station number": "8736897",
+            "lat": "30.6483",
+            "long": "-88.0583",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Meaher State Park, Mobile Bay",
+            "station number": "8733839",
+            "lat": "30.6672",
+            "long": "-87.9364",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "MOBILE, Mobile River (State Dock)",
+            "station number": "8737048",
+            "lat": "30.7083",
+            "long": "-88.0433",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "William Brooks Park, Chichasaw Creek",
+            "station number": "8737138",
+            "lat": "30.7819",
+            "long": "-88.0736",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Lower Hall Landing, Tensaw River",
+            "station number": "8737182",
+            "lat": "30.8183",
+            "long": "-87.915",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Bayou La Batre, Mississippi Sound",
+            "station number": "8739051",
+            "lat": "30.3717",
+            "long": "-88.275",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Bayou LaBatre Bridge",
+            "station number": "8739803",
+            "lat": "30.4057",
+            "long": "-88.2477",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Grand Bay NERR, Mississippi Sound",
+            "station number": "8740166",
+            "lat": "30.4132",
+            "long": "-88.4029",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Point of Pines, Bayou Cumbest",
+            "station number": "8740448",
+            "lat": "30.3867",
+            "long": "-88.44",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Hollingsworth Point, Davis Bayou",
+            "station number": "8743081",
+            "lat": "30.3867",
+            "long": "-88.7733",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Petit Bois Island, Mississippi Sound",
+            "station number": "8740405",
+            "lat": "30.2033",
+            "long": "-88.4417",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Ship Island, Mississippi Sound",
+            "station number": "8744756",
+            "lat": "30.2133",
+            "long": "-88.9717",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Horn Island, Mississippi Sound",
+            "station number": "8742221",
+            "lat": "30.2383",
+            "long": "-88.6667",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Dock E, Port of Pascagoula",
+            "station number": "8741041",
+            "lat": "30.3478",
+            "long": "-88.5058",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Pascagoula, Mississippi Sound",
+            "station number": "8741196",
+            "lat": "30.34",
+            "long": "-88.5333",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Graveline Bayou Entrance",
+            "station number": "8742205",
+            "lat": "30.3617",
+            "long": "-88.6633",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Gulfport Harbor, Mississippi Sound",
+            "station number": "8745557",
+            "lat": "30.36",
+            "long": "-89.0817",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Biloxi (Cadet Point), Biloxi Bay",
+            "station number": "8743735",
+            "lat": "30.39",
+            "long": "-88.8567",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Turkey Creek, Bernard Bayou",
+            "station number": "8745375",
+            "lat": "30.4267",
+            "long": "-89.0533",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Handsboro Bridge, Bernard Bayou",
+            "station number": "8745101",
+            "lat": "30.4067",
+            "long": "-89.0267",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Cat Island",
+            "station number": "8745799",
+            "lat": "30.2317",
+            "long": "-89.1167",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Pass Christian Yacht Club, Mississippi Sound",
+            "station number": "8746819",
+            "lat": "30.31",
+            "long": "-89.245",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Wolf River, Henderson Avenue bridge",
+            "station number": "8748038",
+            "lat": "30.3583",
+            "long": "-89.2733",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "St. Louis Bay entrance",
+            "station number": "8747437",
+            "lat": "30.325",
+            "long": "-89.325",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Waveland",
+            "station number": "8747766",
+            "lat": "30.2817",
+            "long": "-89.3667",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Pearlington, Pearl River",
+            "station number": "8749704",
+            "lat": "30.24",
+            "long": "-89.615",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "The Rigolets, U.S. Highway 90",
+            "station number": "8761402",
+            "lat": "30.1667",
+            "long": "-89.7367",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Bayou BonFouca, Route 433",
+            "station number": "8761473",
+            "lat": "30.2717",
+            "long": "-89.7933",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Tchefuncta River, Lake Pontchartrain",
+            "station number": "8761993",
+            "lat": "30.3783",
+            "long": "-90.16",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "New Canal USCG station, Lake Pontchartrain",
+            "station number": "8761927",
+            "lat": "30.0272",
+            "long": "-90.1133",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Chef Menteur, Chef Menteur Pass",
+            "station number": "8761487",
+            "lat": "30.065",
+            "long": "-89.8",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Michoud Substation, ICWW",
+            "station number": "8761678",
+            "lat": "30.0067",
+            "long": "-89.9367",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Shell Beach, Lake Borgne",
+            "station number": "8761305",
+            "lat": "29.8681",
+            "long": "-89.6732",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Grand Pass",
+            "station number": "8760668",
+            "lat": "30.1267",
+            "long": "-89.2217",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Chandeleur Light",
+            "station number": "8760172",
+            "lat": "30.0483",
+            "long": "-88.8717",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Comfort Island",
+            "station number": "8760742",
+            "lat": "29.8233",
+            "long": "-89.27",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Bay Gardene",
+            "station number": "8761108",
+            "lat": "29.5983",
+            "long": "-89.6183",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Breton Islands",
+            "station number": "8760595",
+            "lat": "29.4933",
+            "long": "-89.1733",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Jack Bay",
+            "station number": "8760841",
+            "lat": "29.3667",
+            "long": "-89.345",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Lonesome Bayou (Thomasin)",
+            "station number": "8760424",
+            "lat": "29.2283",
+            "long": "-89.05",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Grand Bay",
+            "station number": "8760889",
+            "lat": "29.3866",
+            "long": "-89.3801",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "North Pass, Pass a Loutre",
+            "station number": "8760412",
+            "lat": "29.205",
+            "long": "-89.0367",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Pilottown",
+            "station number": "8760721",
+            "lat": "29.1783",
+            "long": "-89.2583",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Southeast Pass",
+            "station number": "8760416",
+            "lat": "29.1167",
+            "long": "-89.045",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "SOUTH PASS",
+            "station number": "8760551",
+            "lat": "28.99",
+            "long": "-89.14",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Port Eads, South Pass",
+            "station number": "8760579",
+            "lat": "29.015",
+            "long": "-89.16",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Southwest Pass",
+            "station number": "8760959",
+            "lat": "28.9317",
+            "long": "-89.4283",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Joseph Bayou",
+            "station number": "8760736",
+            "lat": "29.0583",
+            "long": "-89.2717",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Paris Road Bridge (ICWW)",
+            "station number": "TEC4445",
+            "lat": "30",
+            "long": "-89.9333",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Empire Jetty",
+            "station number": "8761212",
+            "lat": "29.25",
+            "long": "-89.6083",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Bastian Island",
+            "station number": "8761289",
+            "lat": "29.2867",
+            "long": "-89.6633",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Quatre Bayous Pass",
+            "station number": "8761557",
+            "lat": "29.31",
+            "long": "-89.8533",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Barataria Pass",
+            "station number": "8761687",
+            "lat": "29.275",
+            "long": "-89.945",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "EAST POINT, GRAND ISLE",
+            "station number": "8761724",
+            "lat": "29.2633",
+            "long": "-89.9567",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Bayou Rigaud, Grand Isle",
+            "station number": "TEC4455",
+            "lat": "29.2667",
+            "long": "-89.9667",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Independence Island",
+            "station number": "8761677",
+            "lat": "29.31",
+            "long": "-89.9383",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Mendicant Island, Barataria Bay",
+            "station number": "8761742",
+            "lat": "29.3183",
+            "long": "-89.98",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Manilla",
+            "station number": "8761732",
+            "lat": "29.4267",
+            "long": "-89.9767",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Lafitte, Barataria Waterway",
+            "station number": "8761899",
+            "lat": "29.6667",
+            "long": "-90.1117",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Caminada Pass (bridge)",
+            "station number": "8761826",
+            "lat": "29.21",
+            "long": "-90.04",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Port Fourchon",
+            "station number": "8762075",
+            "lat": "29.1142",
+            "long": "-90.1993",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Leeville, Bayou LaFourche",
+            "station number": "8762084",
+            "lat": "29.2483",
+            "long": "-90.2117",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Golden Meadow, Plaisance Canal",
+            "station number": "8762184",
+            "lat": "29.3733",
+            "long": "-90.265",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Timbalier Island, Timbalier Bay",
+            "station number": "8762675",
+            "lat": "29.0867",
+            "long": "-90.5267",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "East Timbalier Island, Timbalier Bay",
+            "station number": "8762223",
+            "lat": "29.0767",
+            "long": "-90.285",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Pelican Islands, Timbalier Bay",
+            "station number": "8762481",
+            "lat": "29.1283",
+            "long": "-90.4233",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Wine Island, Terrebonne Bay",
+            "station number": "8762850",
+            "lat": "29.0783",
+            "long": "-90.5867",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Cocodrie, Terrebonne Bay",
+            "station number": "8762928",
+            "lat": "29.245",
+            "long": "-90.6617",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "E. ISLE DERNIERES, LAKE PELTO",
+            "station number": "8762888",
+            "lat": "29.0717",
+            "long": "-90.64",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Caillou Boca",
+            "station number": "8763206",
+            "lat": "29.0633",
+            "long": "-90.8067",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Raccoon Point, Caillou Bay",
+            "station number": "8763506",
+            "lat": "29.0633",
+            "long": "-90.9617",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Texas Gas Platform, Caillou Bay",
+            "station number": "8763535",
+            "lat": "29.1748",
+            "long": "-90.9764",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Ship Shoal Light",
+            "station number": "8763719",
+            "lat": "28.915",
+            "long": "-91.0717",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Eugene Island, North of, Atchafalaya Bay",
+            "station number": "8764314",
+            "lat": "29.3731",
+            "long": "-91.3839",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Point Au Fer",
+            "station number": "8764256",
+            "lat": "29.3333",
+            "long": "-91.3533",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Shell Island",
+            "station number": "8764165",
+            "lat": "29.4733",
+            "long": "-91.305",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Stouts Pass at Six Mile Lake",
+            "station number": "8764025",
+            "lat": "29.7433",
+            "long": "-91.23",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Point Chevreuil",
+            "station number": "8764634",
+            "lat": "29.5183",
+            "long": "-91.555",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Rabbit Island, 5 miles south of",
+            "station number": "8764706",
+            "lat": "29.42",
+            "long": "-91.5933",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Cote Blanche Island, West Cote Blanche Bay",
+            "station number": "8764931",
+            "lat": "29.735",
+            "long": "-91.7133",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "South Point, Marsh Island",
+            "station number": "8765026",
+            "lat": "29.485",
+            "long": "-91.7633",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Lighthouse Point",
+            "station number": "8765568",
+            "lat": "29.5233",
+            "long": "-92.0433",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Southwest Pass, Vermilion Bay",
+            "station number": "8765551",
+            "lat": "29.58",
+            "long": "-92.035",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Cypremort Point",
+            "station number": "8765251",
+            "lat": "29.7134",
+            "long": "-91.88",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Weeks Bay",
+            "station number": "8765148",
+            "lat": "29.8372",
+            "long": "-91.8375",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Bayou Fearman, Vermillion Bay",
+            "station number": "8765746",
+            "lat": "29.6744",
+            "long": "-92.1352",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Intracoastal City",
+            "station number": "8765785",
+            "lat": "29.783",
+            "long": "-92.1556",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Schooner Bayou, Vermillion Bay",
+            "station number": "8765994",
+            "lat": "29.7581",
+            "long": "-92.2638",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Freshwater Bayou",
+            "station number": "8765969",
+            "lat": "29.6554",
+            "long": "-92.2507",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Freshwater Canal Locks",
+            "station number": "8766072",
+            "lat": "29.5517",
+            "long": "-92.3052",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Mermentau River entrance",
+            "station number": "TEC4495",
+            "lat": "29.75",
+            "long": "-93.1",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Catfish Point, Mermentau River",
+            "station number": "8767095",
+            "lat": "29.8629",
+            "long": "-92.8489",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Calcasieu Pass",
+            "station number": "8768094",
+            "lat": "29.7682",
+            "long": "-93.3429",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "East Calcasieu Lake",
+            "station number": "8767911",
+            "lat": "29.9939",
+            "long": "-93.2705",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Bulk Terminal",
+            "station number": "8767961",
+            "lat": "30.1902",
+            "long": "-93.3008",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Lake Charles",
+            "station number": "8767816",
+            "lat": "30.2236",
+            "long": "-93.2217",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Gum Cove, ICWW",
+            "station number": "8768772",
+            "lat": "30.0587",
+            "long": "-93.5226",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Sabine Pass",
+            "station number": "8770570",
+            "lat": "29.7284",
+            "long": "-93.8701",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Texas Point, Sabine Pass",
+            "station number": "8770822",
+            "lat": "29.6894",
+            "long": "-93.8419",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Port Arthur",
+            "station number": "8770475",
+            "lat": "29.8671",
+            "long": "-93.931",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Rainbow Bridge",
+            "station number": "8770520",
+            "lat": "29.98",
+            "long": "-93.8817",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Galveston Bay Entrance, North Jetty",
+            "station number": "8771341",
+            "lat": "29.3573",
+            "long": "-94.7248",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Galveston Bay Entrance, South Jetty",
+            "station number": "8771416",
+            "lat": "29.3267",
+            "long": "-94.6933",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "GALVESTON, Galveston Channel",
+            "station number": "8771450",
+            "lat": "29.31",
+            "long": "-94.7933",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Port Bolivar",
+            "station number": "8771328",
+            "lat": "29.365",
+            "long": "-94.78",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Texas City, Galveston Bay",
+            "station number": "8771262",
+            "lat": "29.3906",
+            "long": "-94.8849",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Texas City, Turning Basin",
+            "station number": "TEC4513",
+            "lat": "29.3833",
+            "long": "-94.8833",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Eagle Point",
+            "station number": "8771013",
+            "lat": "29.48",
+            "long": "-94.9183",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Clear Lake",
+            "station number": "8770933",
+            "lat": "29.5633",
+            "long": "-95.0667",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Morgans Point, Barbours Cut",
+            "station number": "8770613",
+            "lat": "29.6817",
+            "long": "-94.985",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Lynchburg Landing, San Jacinto River",
+            "station number": "8770733",
+            "lat": "29.7649",
+            "long": "-95.0789",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Cypress, San Jacinot River",
+            "station number": "8770653",
+            "lat": "29.8467",
+            "long": "-95.0883",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Manchester, Houston Ship Channel",
+            "station number": "8770777",
+            "lat": "29.7262",
+            "long": "-95.2658",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Round Point, Trinity Bay",
+            "station number": "8770559",
+            "lat": "29.7133",
+            "long": "-94.69",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Umbrella Point, Trinity Bay",
+            "station number": "8770625",
+            "lat": "29.68",
+            "long": "-94.8683",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Point Barrow, Trinity Bay",
+            "station number": "8770557",
+            "lat": "29.74",
+            "long": "-94.8317",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Sievers Cove, Goat Island",
+            "station number": "8771165",
+            "lat": "29.4311",
+            "long": "-94.7104",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Rollover Pass",
+            "station number": "8770971",
+            "lat": "29.515",
+            "long": "-94.5133",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "High Island, ICWW",
+            "station number": "8770808",
+            "lat": "29.5947",
+            "long": "-94.3903",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Gilchrist, East Bay",
+            "station number": "TEC4525",
+            "lat": "29.5167",
+            "long": "-94.4833",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "GALVESTON RAILROAD BRIDGE",
+            "station number": "8771486",
+            "lat": "29.3026",
+            "long": "-94.8971",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Jamaica Beach, West Bay",
+            "station number": "8771722",
+            "lat": "29.1986",
+            "long": "-94.9883",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Alligator Point, West Bay",
+            "station number": "8771801",
+            "lat": "29.1667",
+            "long": "-95.125",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "San Luis Pass",
+            "station number": "8771972",
+            "lat": "29.081",
+            "long": "-95.1313",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Christmas Bay",
+            "station number": "8772132",
+            "lat": "29.0417",
+            "long": "-95.175",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Galveston Pleasure Pier",
+            "station number": "8771510",
+            "lat": "29.2853",
+            "long": "-94.7894",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Sargent, ICWW",
+            "station number": "8772985",
+            "lat": "28.7714",
+            "long": "-95.6172",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Freeport SPIP (ocean)",
+            "station number": "8772471",
+            "lat": "28.9357",
+            "long": "-95.2942",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Freeport Harbor",
+            "station number": "8772440",
+            "lat": "28.9483",
+            "long": "-95.3083",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Old Brazos River, Freeport",
+            "station number": "8772391",
+            "lat": "28.9611",
+            "long": "-95.3674",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Freeport Entrance Jetty",
+            "station number": "8772479",
+            "lat": "28.9303",
+            "long": "-95.3059",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "East Matagorda",
+            "station number": "8773146",
+            "lat": "28.7101",
+            "long": "-95.914",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Matagorda Bay Entrance Channel",
+            "station number": "8773767",
+            "lat": "28.4269",
+            "long": "-96.3301",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Seadrift",
+            "station number": "8773037",
+            "lat": "28.4069",
+            "long": "-96.7124",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Aransas Wildlife Refuge",
+            "station number": "8774230",
+            "lat": "28.2283",
+            "long": "-96.795",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Copano Bay",
+            "station number": "8774513",
+            "lat": "28.1144",
+            "long": "-97.0244",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Bayside, Copano Bay",
+            "station number": "8774652",
+            "lat": "28.0683",
+            "long": "-97.915",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "PORT O'CONNOR, MATAGORDA BAY",
+            "station number": "8773701",
+            "lat": "28.4459",
+            "long": "-96.3956",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Port Lavaca",
+            "station number": "8773259",
+            "lat": "28.6406",
+            "long": "-96.6098",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Nueces Bay",
+            "station number": "8775244",
+            "lat": "27.8328",
+            "long": "-97.4859",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Aransas, Aransas Pass",
+            "station number": "8775241",
+            "lat": "27.8366",
+            "long": "-97.0391",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Port Aransas",
+            "station number": "8775237",
+            "lat": "27.8397",
+            "long": "-97.0725",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Conn Brown Harbor, Aransas Pass",
+            "station number": "8775083",
+            "lat": "27.9081",
+            "long": "-97.1353",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Corpus Christi, Bob Hall Pier",
+            "station number": "8775870",
+            "lat": "27.58",
+            "long": "-97.2167",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Texas State Aquarium, USS Lexington",
+            "station number": "8775296",
+            "lat": "27.8149",
+            "long": "-97.3892",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Packery Channel",
+            "station number": "8775792",
+            "lat": "27.6333",
+            "long": "-97.2367",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Realitos Pennisula, Laguna Madre",
+            "station number": "8779280",
+            "lat": "26.2624",
+            "long": "-97.2853",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "South Padre Island, Brazos Santiago Pass",
+            "station number": "8779749",
+            "lat": "26.0674",
+            "long": "-97.1548",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "PADRE ISLAND (south end)",
+            "station number": "8779750",
+            "lat": "26.0683",
+            "long": "-97.1567",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Queen Isabella Causeway (east end)",
+            "station number": "8779724",
+            "lat": "26.0783",
+            "long": "-97.17",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Queen Isabella Causeway (west end)",
+            "station number": "8779739",
+            "lat": "26.0717",
+            "long": "-97.1917",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Port Isabel",
+            "station number": "8779770",
+            "lat": "26.0612",
+            "long": "-97.2155",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "South Bay entrance",
+            "station number": "8779768",
+            "lat": "26.0517",
+            "long": "-97.1817",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Amelia City, South Amelia River",
+            "station number": "8720086",
+            "lat": "30.5867",
+            "long": "-81.4633",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "entrance",
+            "station number": "8720135",
+            "lat": "30.5183",
+            "long": "-81.4533",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Nassauville",
+            "station number": "8720098",
+            "lat": "30.5683",
+            "long": "-81.515",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Tiger Point, Pumpkin Hill Creek",
+            "station number": "8720148",
+            "lat": "30.5017",
+            "long": "-81.495",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Edwards Creek, 1 mi. above entrance",
+            "station number": "8720145",
+            "lat": "30.5017",
+            "long": "-81.5417",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Cuno, Lofton Creek",
+            "station number": "8720097",
+            "lat": "30.5767",
+            "long": "-81.5717",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Mink Creek entrance",
+            "station number": "8720119",
+            "lat": "30.5367",
+            "long": "-81.5817",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Halfmoon Island, highway bridge",
+            "station number": "8720093",
+            "lat": "30.5767",
+            "long": "-81.6083",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Boggy Creek, 2 mi. above entrance",
+            "station number": "8720084",
+            "lat": "30.5883",
+            "long": "-81.6633",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Sawpit Creek entrance, bridge",
+            "station number": "8720137",
+            "lat": "30.5133",
+            "long": "-81.4567",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Sawpit Creek, 1 mi. above entrance",
+            "station number": "8720143",
+            "lat": "30.5033",
+            "long": "-81.4717",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Simpson Creek, A1A highway bridge",
+            "station number": "8720168",
+            "lat": "30.465",
+            "long": "-81.4317",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Little Talbot Island, ocean",
+            "station number": "8720194",
+            "lat": "30.43",
+            "long": "-81.405",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Fort George Island, Fort George River",
+            "station number": "8720186",
+            "lat": "30.44",
+            "long": "-81.4383",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Bear Cut, Virginia Key",
+            "station number": "8723214",
+            "lat": "25.7314",
+            "long": "-80.1618",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Key Biscayne Yacht Club, Biscayne Bay",
+            "station number": "8723232",
+            "lat": "25.6983",
+            "long": "-80.17",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Coral Shoal, Biscayne Channel",
+            "station number": "8723251",
+            "lat": "25.6517",
+            "long": "-80.16",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Cutler, Biscayne Bay",
+            "station number": "8723289",
+            "lat": "25.615",
+            "long": "-80.305",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Soldier Key",
+            "station number": "8723303",
+            "lat": "25.59",
+            "long": "-80.1617",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Ragged Keys, Biscayne Bay",
+            "station number": "8723350",
+            "lat": "25.5333",
+            "long": "-80.1717",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Boca Chita Key, Biscayne Bay",
+            "station number": "8723355",
+            "lat": "25.5233",
+            "long": "-80.175",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Sands Key, northwest point, Biscayne Bay",
+            "station number": "8723372",
+            "lat": "25.5067",
+            "long": "-80.1883",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Coon Point, Elliott Key, Biscayne Bay",
+            "station number": "8723391",
+            "lat": "25.48",
+            "long": "-80.1883",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Elliott Key Harbor, Elliott Key, Biscayne Bay",
+            "station number": "8723409",
+            "lat": "25.4533",
+            "long": "-80.1967",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Turkey Point, Biscayne Bay",
+            "station number": "8723423",
+            "lat": "25.4367",
+            "long": "-80.33",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Billys Point, south of, Elliott Key, Biscayne Bay",
+            "station number": "8723439",
+            "lat": "25.415",
+            "long": "-80.21",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Sea Grape Point, Elliott Key",
+            "station number": "8723393",
+            "lat": "25.4767",
+            "long": "-80.18",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Christmas Point, Elliott Key",
+            "station number": "8723457",
+            "lat": "25.3917",
+            "long": "-80.23",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Adams Key, south end, Biscayne Bay",
+            "station number": "8723453",
+            "lat": "25.3967",
+            "long": "-80.2333",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Totten Key, west side, Biscayne Bay",
+            "station number": "8723467",
+            "lat": "25.3783",
+            "long": "-80.2567",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "East Arsenicker, Card Sound",
+            "station number": "8723465",
+            "lat": "25.3733",
+            "long": "-80.29",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Card Sound, western side",
+            "station number": "8723491",
+            "lat": "25.345",
+            "long": "-80.3317",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Pumpkin Key, south end, Card Sound",
+            "station number": "8723506",
+            "lat": "25.325",
+            "long": "-80.2933",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Wednesday Point, Key Largo, Card Sound",
+            "station number": "8723518",
+            "lat": "25.31",
+            "long": "-80.2983",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Cormorant Point, Key Largo, Card Sound",
+            "station number": "8723532",
+            "lat": "25.29",
+            "long": "-80.34",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Little Card Sound bridge",
+            "station number": "8723534",
+            "lat": "25.2883",
+            "long": "-80.37",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Ocean Reef Harbor, Key Largo",
+            "station number": "8723519",
+            "lat": "25.3083",
+            "long": "-80.2767",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Main Key, Barnes Sound",
+            "station number": "8723571",
+            "lat": "25.24",
+            "long": "-80.4",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Manatee Creek, Manatee Bay, Barnes Sound",
+            "station number": "8723575",
+            "lat": "25.235",
+            "long": "-80.43",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Carysfort Reef",
+            "station number": "8723583",
+            "lat": "25.2217",
+            "long": "-80.2117",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Garden Cove, Key Largo",
+            "station number": "8723622",
+            "lat": "25.1717",
+            "long": "-80.3667",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Largo Sound, Key Largo",
+            "station number": "8723651",
+            "lat": "25.14",
+            "long": "-80.395",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Key Largo, South Sound, Key Largo",
+            "station number": "8723667",
+            "lat": "25.1133",
+            "long": "-80.4167",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Point Charles, Key Largo",
+            "station number": "8723691",
+            "lat": "25.0817",
+            "long": "-80.45",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Rock Harbor, Key Largo",
+            "station number": "8723689",
+            "lat": "25.0817",
+            "long": "-80.4467",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Tavernier Harbor, Hawk Channel",
+            "station number": "8723747",
+            "lat": "25.005",
+            "long": "-80.5167",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Tavernier Creek, Hwy. 1 bridge, Hawk Channel",
+            "station number": "8723748",
+            "lat": "25.0033",
+            "long": "-80.53",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Crane Keys, north side, Florida Bay",
+            "station number": "8723746",
+            "lat": "25.005",
+            "long": "-80.6183",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "East Key, southern end, Florida Bay",
+            "station number": "8723752",
+            "lat": "24.9967",
+            "long": "-80.61",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Plantation Key, Hawk Channel",
+            "station number": "8723769",
+            "lat": "24.9733",
+            "long": "-80.55",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Yacht Harbor, Cowpens Anchorage, Plantation Key",
+            "station number": "8723776",
+            "lat": "24.965",
+            "long": "-80.5683",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Snake Creek, Hwy. 1 bridge, Windley Key",
+            "station number": "8723787",
+            "lat": "24.9517",
+            "long": "-80.5883",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Snake Creek, USCG Station, Plantation Key",
+            "station number": "8723786",
+            "lat": "24.9533",
+            "long": "-80.5867",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Whale Harbor, Windley Key, Hawk Channel",
+            "station number": "8723795",
+            "lat": "24.94",
+            "long": "-80.6083",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Whale Harbor Channel, Hwy. 1 bridge, Windley Key",
+            "station number": "8723797",
+            "lat": "24.9383",
+            "long": "-80.61",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Upper Matecumbe Key, Hawk Channel",
+            "station number": "8723814",
+            "lat": "24.915",
+            "long": "-80.6317",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Alligator Reef, Hawk Channel",
+            "station number": "8723861",
+            "lat": "24.85",
+            "long": "-80.6183",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Flamingo, Florida Bay",
+            "station number": "8723644",
+            "lat": "25.1417",
+            "long": "-80.9233",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Upper Matecumbe Key, west end, Hawk Channel",
+            "station number": "8723828",
+            "lat": "24.8967",
+            "long": "-80.6583",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Indian Key, Hawk Channel",
+            "station number": "8723843",
+            "lat": "24.8767",
+            "long": "-80.6767",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Shell Key Channel, Florida Bay",
+            "station number": "8723812",
+            "lat": "24.9133",
+            "long": "-80.66",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Lignumvitae Key, NE side, Florida Bay",
+            "station number": "8723824",
+            "lat": "24.9033",
+            "long": "-80.695",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Lignumvitae Key, west side, Florida Bay",
+            "station number": "8723825",
+            "lat": "24.9",
+            "long": "-80.705",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Little Basin, Upper Matecumbe Key, Florida Bay",
+            "station number": "8723813",
+            "lat": "24.915",
+            "long": "-80.64",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Shell Key, northwest side, Lignumvitae Basin",
+            "station number": "8723807",
+            "lat": "24.9233",
+            "long": "-80.6717",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Islamorada, Upper Matecumbe Key, Florida Bay",
+            "station number": "8723808",
+            "lat": "24.925",
+            "long": "-80.6317",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Indian Key Anchorage, Lower Matecumbe Key",
+            "station number": "8723851",
+            "lat": "24.8683",
+            "long": "-80.7033",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Matecumbe Bight, Lower Matecumbe Key, Fla. Bay",
+            "station number": "8723852",
+            "lat": "24.865",
+            "long": "-80.7167",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Matecumbe Harbor, Lower Matecumbe Key, Fla. Bay",
+            "station number": "8723862",
+            "lat": "24.8517",
+            "long": "-80.74",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Channel Two, east, Lower Matecumbe Key, Fla. Bay",
+            "station number": "8723868",
+            "lat": "24.845",
+            "long": "-80.7483",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Channel Two, west side, Hawk Channel",
+            "station number": "8723869",
+            "lat": "24.8417",
+            "long": "-80.7533",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Channel Five, east side, Hawk Channel",
+            "station number": "8723874",
+            "lat": "24.8367",
+            "long": "-80.7667",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Channel Five, west side, Hawk Channel",
+            "station number": "8723872",
+            "lat": "24.84",
+            "long": "-80.78",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Jewfish Hole, Long Key, Florida Bay",
+            "station number": "8723873",
+            "lat": "24.8383",
+            "long": "-80.7983",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Long Key Bight, Long Key",
+            "station number": "8723879",
+            "lat": "24.8283",
+            "long": "-80.8083",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Long Key Lake, Long Key",
+            "station number": "8723887",
+            "lat": "24.82",
+            "long": "-80.8167",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Long Key, western end",
+            "station number": "8723899",
+            "lat": "24.8033",
+            "long": "-80.85",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Conch Key, eastern end",
+            "station number": "8723906",
+            "lat": "24.7917",
+            "long": "-80.8833",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Toms Harbor Cut",
+            "station number": "8723912",
+            "lat": "24.7833",
+            "long": "-80.9067",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Duck Key, Hawk Channel",
+            "station number": "8723927",
+            "lat": "24.765",
+            "long": "-80.9133",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Toms Harbor Channel, Hwy. 1 bridge",
+            "station number": "8723918",
+            "lat": "24.7767",
+            "long": "-80.9233",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Grassy Key, north side, Florida Bay",
+            "station number": "8723921",
+            "lat": "24.7717",
+            "long": "-80.94",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Grassy Key, south side, Hawk Channel",
+            "station number": "8723933",
+            "lat": "24.755",
+            "long": "-80.9583",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Fat Deer Key, Florida Bay",
+            "station number": "8723949",
+            "lat": "24.7333",
+            "long": "-81.0167",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Vaca Key-Fat Deer Key bridge",
+            "station number": "8723950",
+            "lat": "24.73",
+            "long": "-81.03",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Key Colony Beach",
+            "station number": "8723962",
+            "lat": "24.7183",
+            "long": "-81.0167",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "VACA KEY, USCG STATION, FLORIDA BAY",
+            "station number": "8723970",
+            "lat": "24.711",
+            "long": "-81.1065",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Boot Key Harbor bridge, Boot Key",
+            "station number": "8723971",
+            "lat": "24.7033",
+            "long": "-81.105",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Sombrero Key, Hawk Channel",
+            "station number": "8723999",
+            "lat": "24.6267",
+            "long": "-81.1117",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Knight Key Channel, Knight Key, Florida Bay",
+            "station number": "8724008",
+            "lat": "24.7067",
+            "long": "-81.125",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Pigeon Key, south side, Hawk Channel",
+            "station number": "8724032",
+            "lat": "24.7033",
+            "long": "-81.155",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Pigeon Key, north side, Florida Bay",
+            "station number": "8724033",
+            "lat": "24.705",
+            "long": "-81.1567",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Molasses Key Channel, Molasses Keys",
+            "station number": "8724062",
+            "lat": "24.6833",
+            "long": "-81.1917",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Money Key",
+            "station number": "8724082",
+            "lat": "24.6833",
+            "long": "-81.2167",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Little Duck Key, east end, Hawk Channel",
+            "station number": "8724093",
+            "lat": "24.6817",
+            "long": "-81.2283",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "East Bahia Honda Key, south end, Florida Bay",
+            "station number": "8724094",
+            "lat": "24.775",
+            "long": "-81.2267",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Cocoanut Key, Florida Bay",
+            "station number": "8724098",
+            "lat": "24.745",
+            "long": "-81.2367",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "West Bahia Honda Key",
+            "station number": "8724129",
+            "lat": "24.78",
+            "long": "-81.2717",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Horseshoe Keys, south end",
+            "station number": "8724139",
+            "lat": "24.7667",
+            "long": "-81.2833",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Johnson Keys, south end",
+            "station number": "8724153",
+            "lat": "24.7433",
+            "long": "-81.3",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Johnson Keys, north end",
+            "station number": "8724172",
+            "lat": "24.7667",
+            "long": "-81.3233",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Missouri Key-Little Duck Key Channel",
+            "station number": "8724099",
+            "lat": "24.68",
+            "long": "-81.235",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Missouri Key-Ohio Key Channel, west side",
+            "station number": "8724107",
+            "lat": "24.6733",
+            "long": "-81.2433",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Ohio Key-Bahia Honda Key Channel, west side",
+            "station number": "8724112",
+            "lat": "24.67",
+            "long": "-81.2517",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Bahia Honda Key, Bahia Honda Channel",
+            "station number": "8724138",
+            "lat": "24.655",
+            "long": "-81.2817",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Big Pine Key, Spanish Harbor",
+            "station number": "8724178",
+            "lat": "24.6483",
+            "long": "-81.33",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Big Pine Key, Doctors Arm, Bogie Channel",
+            "station number": "8724201",
+            "lat": "24.69",
+            "long": "-81.3567",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Big Pine Key, Bogie Channel Bridge",
+            "station number": "8724193",
+            "lat": "24.6967",
+            "long": "-81.3483",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "No Name Key, east side, Bahia Honda Channel",
+            "station number": "8724168",
+            "lat": "24.6983",
+            "long": "-81.3183",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Little Pine Key, south end",
+            "station number": "8724154",
+            "lat": "24.7133",
+            "long": "-81.3033",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Porpoise Key, Big Spanish Channel",
+            "station number": "8724196",
+            "lat": "24.7183",
+            "long": "-81.3517",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Water Key, west end, Big Spanish Channel",
+            "station number": "8724189",
+            "lat": "24.74",
+            "long": "-81.3417",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Mayo Key, Big Spanish Channel",
+            "station number": "8724205",
+            "lat": "24.7333",
+            "long": "-81.3617",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Little Pine Key, north end",
+            "station number": "8724177",
+            "lat": "24.75",
+            "long": "-81.3283",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Big Pine Key, northeast shore",
+            "station number": "8724226",
+            "lat": "24.7283",
+            "long": "-81.3867",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Crawl Key, Big Spanish Channel",
+            "station number": "8724199",
+            "lat": "24.7567",
+            "long": "-81.3583",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Big Pine Key, north end",
+            "station number": "8724231",
+            "lat": "24.745",
+            "long": "-81.395",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Annette Key, north end, Big Spanish Channel",
+            "station number": "8724229",
+            "lat": "24.7583",
+            "long": "-81.39",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Little Spanish Key, Spanish Banks",
+            "station number": "8724209",
+            "lat": "24.7733",
+            "long": "-81.3683",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Big Spanish Key",
+            "station number": "8724246",
+            "lat": "24.7883",
+            "long": "-81.4117",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Munson Island, Newfound Harbor Channel",
+            "station number": "8724238",
+            "lat": "24.6233",
+            "long": "-81.4033",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Ramrod Key, Newfound Harbor",
+            "station number": "8724239",
+            "lat": "24.65",
+            "long": "-81.4033",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Middle Torch Key, Torch Ramrod Channel",
+            "station number": "8724237",
+            "lat": "24.6617",
+            "long": "-81.4017",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Little Torch Key, Torch Channel",
+            "station number": "8724232",
+            "lat": "24.665",
+            "long": "-81.395",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Big Pine Key, Newfound Harbor Channel",
+            "station number": "8724215",
+            "lat": "24.6517",
+            "long": "-81.375",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Big Pine Key, Coupon Bight",
+            "station number": "8724192",
+            "lat": "24.6517",
+            "long": "-81.35",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Little Torch Key, Pine Channel Bridge, south side",
+            "station number": "8724223",
+            "lat": "24.665",
+            "long": "-81.3867",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Big Pine Key, Pine Channel Bridge, south side",
+            "station number": "8724213",
+            "lat": "24.6683",
+            "long": "-81.3717",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Big Pine Key, Pine Channel Bridge, north side",
+            "station number": "8724211",
+            "lat": "24.67",
+            "long": "-81.3683",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Big Pine Key, west side, Pine Channel",
+            "station number": "8724227",
+            "lat": "24.69",
+            "long": "-81.3833",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Howe Key, south end, Harbor Channel",
+            "station number": "8724243",
+            "lat": "24.725",
+            "long": "-81.4067",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Big Torch Key, Harbor Channel",
+            "station number": "8724274",
+            "lat": "24.7367",
+            "long": "-81.4433",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Water Keys, south end, Harbor Channel",
+            "station number": "8724273",
+            "lat": "24.7467",
+            "long": "-81.45",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Howe Key, northwest end",
+            "station number": "8724257",
+            "lat": "24.7583",
+            "long": "-81.4283",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Summerland Key, Niles Channel South",
+            "station number": "8724266",
+            "lat": "24.6517",
+            "long": "-81.435",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Summerland Key, Niles Channel Bridge",
+            "station number": "8724267",
+            "lat": "24.66",
+            "long": "-81.4367",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Ramrod Key, Niles Channel Bridge",
+            "station number": "8724255",
+            "lat": "24.66",
+            "long": "-81.4233",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Big Torch Key, Niles Channel",
+            "station number": "8724264",
+            "lat": "24.705",
+            "long": "-81.4333",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Knockemdown Key, north end",
+            "station number": "8724302",
+            "lat": "24.715",
+            "long": "-81.4783",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Raccoon Key, east side",
+            "station number": "8724311",
+            "lat": "24.7417",
+            "long": "-81.4833",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Content Keys, Content Passage",
+            "station number": "8724307",
+            "lat": "24.79",
+            "long": "-81.4833",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Key Lois, southeast end",
+            "station number": "8724293",
+            "lat": "24.6067",
+            "long": "-81.47",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Sugarloaf Key, east side, Tarpon Creek",
+            "station number": "8724327",
+            "lat": "24.6283",
+            "long": "-81.51",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Gopher Key, Cudjoe Bay",
+            "station number": "8724306",
+            "lat": "24.6417",
+            "long": "-81.485",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Sugarloaf Key, Pirates Cove",
+            "station number": "8724326",
+            "lat": "24.6533",
+            "long": "-81.515",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Cudjoe Key, Cudjoe Bay",
+            "station number": "8724313",
+            "lat": "24.66",
+            "long": "-81.4917",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Summerland Key, southwest side, Kemp Channel",
+            "station number": "8724276",
+            "lat": "24.65",
+            "long": "-81.4467",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Kemp Channel Viaduct",
+            "station number": "8724292",
+            "lat": "24.6617",
+            "long": "-81.4683",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Cudjoe Key, north end, Kemp Channel",
+            "station number": "8724328",
+            "lat": "24.7",
+            "long": "-81.505",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Sugarloaf Key, northeast side, Bow Channel",
+            "station number": "8724347",
+            "lat": "24.6717",
+            "long": "-81.5333",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Cudjoe Key, Pirates Cove",
+            "station number": "8724332",
+            "lat": "24.6617",
+            "long": "-81.515",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Sugarloaf Key, north end, Bow Channel",
+            "station number": "8724368",
+            "lat": "24.6933",
+            "long": "-81.555",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Pumpkin Key, Bow Channel",
+            "station number": "8724373",
+            "lat": "24.7167",
+            "long": "-81.5617",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Sawyer Key, outside, Cudjoe Channel",
+            "station number": "8724370",
+            "lat": "24.7583",
+            "long": "-81.5617",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Sawyer Key, inside, Cudjoe Channel",
+            "station number": "8724369",
+            "lat": "24.7583",
+            "long": "-81.5617",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Perky",
+            "station number": "8724378",
+            "lat": "24.6483",
+            "long": "-81.57",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Park Channel Bridge",
+            "station number": "8724353",
+            "lat": "24.655",
+            "long": "-81.54",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "North Harris Channel",
+            "station number": "8724367",
+            "lat": "24.6533",
+            "long": "-81.5533",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Tarpon Creek",
+            "station number": "8724334",
+            "lat": "24.63",
+            "long": "-81.5167",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Johnston Key, southwest end, Turkey Basin",
+            "station number": "8724397",
+            "lat": "24.71",
+            "long": "-81.5933",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Snipe Keys, southeast end, Inner Narrows",
+            "station number": "8724409",
+            "lat": "24.6583",
+            "long": "-81.6083",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Snipe Keys, Middle Narrows",
+            "station number": "8724427",
+            "lat": "24.6667",
+            "long": "-81.63",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Snipe Keys, Snipe Point",
+            "station number": "8724463",
+            "lat": "24.6917",
+            "long": "-81.6733",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Waltz Key, Waltz Key Basin",
+            "station number": "8724448",
+            "lat": "24.6467",
+            "long": "-81.6533",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Duck Key Point, Duck Key, Waltz Key Basin",
+            "station number": "8724474",
+            "lat": "24.6233",
+            "long": "-81.685",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "O'Hara Key, north end, Waltz Key Basin",
+            "station number": "8724441",
+            "lat": "24.6167",
+            "long": "-81.645",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Saddlebunch Keys, Channel No. 5",
+            "station number": "8724423",
+            "lat": "24.6117",
+            "long": "-81.6233",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Saddlebunch Keys, Channel No. 4",
+            "station number": "8724417",
+            "lat": "24.615",
+            "long": "-81.6167",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Saddlebunch Keys, Channel No. 3",
+            "station number": "8724405",
+            "lat": "24.6233",
+            "long": "-81.6033",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Bird Key, Similar Sound",
+            "station number": "8724436",
+            "lat": "24.5883",
+            "long": "-81.6383",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Shark Key, southeast end, Similar Sound",
+            "station number": "8724438",
+            "lat": "24.6033",
+            "long": "-81.645",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Saddlebunch Keys, Similar Sound",
+            "station number": "8724422",
+            "lat": "24.6",
+            "long": "-81.6217",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Big Coppitt Key, northeast side, Waltz Key Basin",
+            "station number": "8724489",
+            "lat": "24.6017",
+            "long": "-81.655",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Rockland Key, Rockland Channel Bridge",
+            "station number": "8724459",
+            "lat": "24.5917",
+            "long": "-81.67",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Boca Chica Key, Long Point",
+            "station number": "8724485",
+            "lat": "24.6033",
+            "long": "-81.6983",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Channel Key, west side",
+            "station number": "8724507",
+            "lat": "24.6033",
+            "long": "-81.725",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Boca Chica Marina",
+            "station number": "8724493",
+            "lat": "24.575",
+            "long": "-81.7083",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Boca Chica Key, Southwest end",
+            "station number": "8724499",
+            "lat": "24.5633",
+            "long": "-81.7133",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Boca Chica Channel Bridge",
+            "station number": "8724503",
+            "lat": "24.5767",
+            "long": "-81.7217",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Key Haven - Stock Island Channel",
+            "station number": "8724517",
+            "lat": "24.58",
+            "long": "-81.7383",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Cow Key Channel",
+            "station number": "8724527",
+            "lat": "24.57",
+            "long": "-81.75",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Sigsbee Park, Garrison Bight Channel",
+            "station number": "8724542",
+            "lat": "24.585",
+            "long": "-81.775",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Fleming Key, north end",
+            "station number": "8724571",
+            "lat": "24.5917",
+            "long": "-81.795",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Riveria Canal, Key West",
+            "station number": "8724529",
+            "lat": "24.565",
+            "long": "-81.7517",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Key West, south side, White Street Pier",
+            "station number": "8724557",
+            "lat": "24.545",
+            "long": "-81.7833",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "KEY WEST",
+            "station number": "8724580",
+            "lat": "24.5508",
+            "long": "-81.8081",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Sand Key Lighthouse, Sand Key Channel",
+            "station number": "8724635",
+            "lat": "24.4533",
+            "long": "-81.8783",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Garden Key, Dry Tortugas",
+            "station number": "8724697",
+            "lat": "24.6267",
+            "long": "-82.8717",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Loggerhead Key, Dry Tortugas",
+            "station number": "8724698",
+            "lat": "24.6317",
+            "long": "-82.92",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Smith Shoal Light",
+            "station number": "8724671",
+            "lat": "24.7183",
+            "long": "-81.9215",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Little Hickory Island",
+            "station number": "8725283",
+            "lat": "26.3533",
+            "long": "-81.855",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Coconut Point",
+            "station number": "8725319",
+            "lat": "26.4",
+            "long": "-81.8433",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Carlos Point, Estero Bay",
+            "station number": "8725325",
+            "lat": "26.405",
+            "long": "-81.885",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Estero River",
+            "station number": "8725346",
+            "lat": "26.43",
+            "long": "-81.8567",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Hendry Creek, Estero Bay",
+            "station number": "8725377",
+            "lat": "26.47",
+            "long": "-81.8767",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Estero Island, Estero Bay",
+            "station number": "8725351",
+            "lat": "26.4383",
+            "long": "-81.9183",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Iona Shores",
+            "station number": "8725418",
+            "lat": "26.5217",
+            "long": "-81.965",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Cape Coral Bridge",
+            "station number": "8725451",
+            "lat": "26.5645",
+            "long": "-81.9358",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Fort Myers",
+            "station number": "8725520",
+            "lat": "26.6477",
+            "long": "-81.8712",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Port Boca Grande, Charlotte Harbor",
+            "station number": "8725577",
+            "lat": "26.72",
+            "long": "-82.2583",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Bokeelia, Charlotte Harbor",
+            "station number": "8725541",
+            "lat": "26.7067",
+            "long": "-82.1633",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Turtle Bay",
+            "station number": "8725649",
+            "lat": "26.7967",
+            "long": "-82.1833",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Punta Gorda, Charlotte Harbor",
+            "station number": "8725744",
+            "lat": "26.9283",
+            "long": "-82.065",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Shell Point, Peace River, Charlotte Harbor",
+            "station number": "8725791",
+            "lat": "26.9883",
+            "long": "-81.9933",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Locust Point, Hog Island",
+            "station number": "8725745",
+            "lat": "26.93",
+            "long": "-82.1367",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "El Jobean, Myakka River",
+            "station number": "8725769",
+            "lat": "26.9617",
+            "long": "-82.21",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Myakka River, US 41 bridge",
+            "station number": "8725837",
+            "lat": "27.045",
+            "long": "-82.2933",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Cape Sable, East Cape",
+            "station number": "TEC4165",
+            "lat": "25.1167",
+            "long": "-81.0833",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Shark River entrance",
+            "station number": "8724769",
+            "lat": "25.345",
+            "long": "-81.1267",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Whitewater Bay",
+            "station number": "TEC4169",
+            "lat": "25.3167",
+            "long": "-81.0333",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Lostmans River entrance",
+            "station number": "8724842",
+            "lat": "25.5533",
+            "long": "-81.2133",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Onion Key, Lostmans River",
+            "station number": "8724863",
+            "lat": "25.6117",
+            "long": "-81.1333",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Chatham River entrance",
+            "station number": "8724891",
+            "lat": "25.69",
+            "long": "-81.285",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Chokoloskee",
+            "station number": "8724919",
+            "lat": "25.8133",
+            "long": "-81.3633",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Everglades City, Barron River",
+            "station number": "8724948",
+            "lat": "25.8583",
+            "long": "-81.3867",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Indian Key",
+            "station number": "TEC4183",
+            "lat": "25.8",
+            "long": "-81.4667",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Round Key",
+            "station number": "TEC4185",
+            "lat": "25.8333",
+            "long": "-81.5333",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Pumpkin Bay",
+            "station number": "8724963",
+            "lat": "25.895",
+            "long": "-81.5583",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Marco Island, Caxambas Pass",
+            "station number": "8724967",
+            "lat": "25.9083",
+            "long": "-81.7283",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Coon Key",
+            "station number": "8724964",
+            "lat": "25.8967",
+            "long": "-81.6367",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Cape Romano",
+            "station number": "8724947",
+            "lat": "25.8533",
+            "long": "-81.675",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Marco, Big Marco River",
+            "station number": "8724991",
+            "lat": "25.9717",
+            "long": "-81.7283",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "McIlvaine Bay",
+            "station number": "8724996",
+            "lat": "25.985",
+            "long": "-81.7017",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Keewaydin island (inside)",
+            "station number": "8725019",
+            "lat": "26.025",
+            "long": "-81.7683",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Naples, Naples Bay, north end",
+            "station number": "8725114",
+            "lat": "26.1367",
+            "long": "-81.7883",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "NAPLES (outer coast)",
+            "station number": "8725110",
+            "lat": "26.1317",
+            "long": "-81.8075",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Wiggins Pass, Cocohatchee River",
+            "station number": "8725235",
+            "lat": "26.29",
+            "long": "-81.8183",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Cocohatchee River, U.S. 41 bridge",
+            "station number": "8725228",
+            "lat": "26.2817",
+            "long": "-81.8017",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Matanzas Pass (fixed bridge) Estero Island",
+            "station number": "8725366",
+            "lat": "26.4567",
+            "long": "-81.9533",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Point Ybel, San Carlos Bay entrance",
+            "station number": "TEC4207",
+            "lat": "26.45",
+            "long": "-82.0167",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Punta Rassa, San Carlos Bay",
+            "station number": "8725391",
+            "lat": "26.4883",
+            "long": "-82.0133",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Tarpon Bay, Sanibel Island",
+            "station number": "8725362",
+            "lat": "26.4433",
+            "long": "-82.0817",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "St. James City, Pine Island",
+            "station number": "8725393",
+            "lat": "26.4917",
+            "long": "-82.0817",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Galt Island, Pine Island Sound",
+            "station number": "8725411",
+            "lat": "26.5133",
+            "long": "-82.1067",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Captiva Island (outside)",
+            "station number": "8725383",
+            "lat": "26.4783",
+            "long": "-82.1833",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Captiva Island, Pine Island Sound",
+            "station number": "8725417",
+            "lat": "26.5217",
+            "long": "-82.1883",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "North Captiva Island",
+            "station number": "8725488",
+            "lat": "26.605",
+            "long": "-82.2183",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Redfish Pass, Captiva Island (north end)",
+            "station number": "8725441",
+            "lat": "26.55",
+            "long": "-82.1967",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Tropical Homesites Landing, Pine Island",
+            "station number": "8725439",
+            "lat": "26.5483",
+            "long": "-82.08",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Matlacha Pass (bascule bridge)",
+            "station number": "8725506",
+            "lat": "26.6317",
+            "long": "-82.0683",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Pineland, Pine Island",
+            "station number": "8725528",
+            "lat": "26.66",
+            "long": "-82.155",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Placida, Gasparilla Sound",
+            "station number": "8725667",
+            "lat": "26.8333",
+            "long": "-82.265",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Don Pedro Island State Park, Cutoff (south)",
+            "station number": "8725685",
+            "lat": "26.855",
+            "long": "-82.3033",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Englewood, Lemon Bay",
+            "station number": "8725747",
+            "lat": "26.9333",
+            "long": "-82.3533",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Manasota, Lemon Bay",
+            "station number": "8725809",
+            "lat": "27.0117",
+            "long": "-82.41",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Venice Municipal Airport",
+            "station number": "8725858",
+            "lat": "27.0717",
+            "long": "-82.4533",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Venice Inlet (inside)",
+            "station number": "8725889",
+            "lat": "27.1117",
+            "long": "-82.4633",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Sarasota, Sarasota Bay",
+            "station number": "8726083",
+            "lat": "27.3317",
+            "long": "-82.545",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Cortez, Sarasota Bay",
+            "station number": "8726217",
+            "lat": "27.4667",
+            "long": "-82.6867",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Egmont Key, Egmont Channel",
+            "station number": "8726347",
+            "lat": "27.6017",
+            "long": "-82.76",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Anna Maria Key, Bradenton Beach",
+            "station number": "8726243",
+            "lat": "27.4967",
+            "long": "-82.7133",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Anna Maria Key, city pier",
+            "station number": "8726282",
+            "lat": "27.5333",
+            "long": "-82.73",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Bradenton, Manatee River",
+            "station number": "8726247",
+            "lat": "27.5",
+            "long": "-82.5733",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Redfish Point, Manatee River",
+            "station number": "8726278",
+            "lat": "27.5267",
+            "long": "-82.4817",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Mullet Key Channel (Skyway)",
+            "station number": "8726364",
+            "lat": "27.615",
+            "long": "-82.7267",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Port Manatee",
+            "station number": "8726384",
+            "lat": "27.6383",
+            "long": "-82.5625",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Shell Point",
+            "station number": "8726468",
+            "lat": "27.7183",
+            "long": "-82.48",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Little Manatee River, US 41 Bridge",
+            "station number": "8726436",
+            "lat": "27.705",
+            "long": "-82.4483",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Point Pinellas",
+            "station number": "8726454",
+            "lat": "27.7017",
+            "long": "-82.64",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "ST. PETERSBURG",
+            "station number": "8726520",
+            "lat": "27.7606",
+            "long": "-82.6269",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "APOLLO BEACH, HILLSBOROUGH BAY",
+            "station number": "8726537",
+            "lat": "27.7867",
+            "long": "-82.4267",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "NEWMAN BRANCH",
+            "station number": "8726539",
+            "lat": "27.7833",
+            "long": "-82.4067",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Ballast Point",
+            "station number": "8726639",
+            "lat": "27.89",
+            "long": "-82.48",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Pendola Point, Hillsborough Bay",
+            "station number": "8726651",
+            "lat": "27.8983",
+            "long": "-82.4267",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Davis Island, Hillsborough Bay",
+            "station number": "8726657",
+            "lat": "27.9083",
+            "long": "-82.4517",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "McKay Bay entrance",
+            "station number": "8726667",
+            "lat": "27.9133",
+            "long": "-82.425",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "East Bay, Tampa Bay",
+            "station number": "8726674",
+            "lat": "27.9231",
+            "long": "-82.4214",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Old Port Tampa",
+            "station number": "8726607",
+            "lat": "27.8578",
+            "long": "-82.5528",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Gandy Bridge, Old Tampa Bay",
+            "station number": "8726641",
+            "lat": "27.8933",
+            "long": "-82.5383",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Bay Aristocrat Village, Old Tampa Bay",
+            "station number": "8726689",
+            "lat": "27.9417",
+            "long": "-82.72",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Safety Harbor, Old Tampa Bay",
+            "station number": "8726738",
+            "lat": "27.9883",
+            "long": "-82.685",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Mobbly Bayou",
+            "station number": "8726769",
+            "lat": "28.0217",
+            "long": "-82.655",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Pass-a-Grille Beach",
+            "station number": "TEC4271",
+            "lat": "27.6833",
+            "long": "-82.7333",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Gulfport",
+            "station number": "8726486",
+            "lat": "27.7367",
+            "long": "-82.7067",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Long Key, 0.5mi N. of Corey Causeway",
+            "station number": "8726494",
+            "lat": "27.7517",
+            "long": "-82.7533",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Johns Pass",
+            "station number": "8726533",
+            "lat": "27.785",
+            "long": "-82.7817",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Madeira Beach Causeway",
+            "station number": "8726574",
+            "lat": "27.8083",
+            "long": "-82.795",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Indian Rocks Beach (inside)",
+            "station number": "8726625",
+            "lat": "27.8767",
+            "long": "-82.85",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Clearwater",
+            "station number": "8726706",
+            "lat": "27.955",
+            "long": "-82.8067",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Clearwater Beach",
+            "station number": "8726724",
+            "lat": "27.9783",
+            "long": "-82.8317",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Dunedin, St. Joseph Sound",
+            "station number": "8726761",
+            "lat": "28.0133",
+            "long": "-82.7933",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Anclote Key, southern end",
+            "station number": "8726917",
+            "lat": "28.165",
+            "long": "-82.8433",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Anclote, Anclote River",
+            "station number": "8726924",
+            "lat": "28.1717",
+            "long": "-82.785",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Tarpon Springs, Anclote River",
+            "station number": "8726905",
+            "lat": "28.16",
+            "long": "-82.7683",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "North Anclote Key",
+            "station number": "8726942",
+            "lat": "28.21",
+            "long": "-82.84",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Gulf Harbors",
+            "station number": "8726995",
+            "lat": "28.2433",
+            "long": "-82.7633",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Hwy. 19 bridge, Pithlachascotee River",
+            "station number": "8727012",
+            "lat": "28.2683",
+            "long": "-82.7267",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "New Port Richey, Pithlachascotee River",
+            "station number": "8727001",
+            "lat": "28.2483",
+            "long": "-82.7233",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Hudson, Hudson Creek",
+            "station number": "8727061",
+            "lat": "28.3617",
+            "long": "-82.71",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Aripeka, Hammock Creek",
+            "station number": "8727097",
+            "lat": "28.4333",
+            "long": "-82.6683",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Hernando Beach, Rocky Creek, Little Pine I. Bay",
+            "station number": "8727122",
+            "lat": "28.4867",
+            "long": "-82.6617",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Bayport",
+            "station number": "8727151",
+            "lat": "28.5333",
+            "long": "-82.65",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Johns Island, Chassahowitzka Bay",
+            "station number": "8727235",
+            "lat": "28.6917",
+            "long": "-82.6383",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Chassahowitzka, Chassahowitzka River",
+            "station number": "8727246",
+            "lat": "28.715",
+            "long": "-82.5767",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Mason Creek, Homosassa Bay",
+            "station number": "8727274",
+            "lat": "28.7617",
+            "long": "-82.6383",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Tuckers Island, Homosassa River",
+            "station number": "8727277",
+            "lat": "28.7717",
+            "long": "-82.695",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Halls River bridge, Homosassa River",
+            "station number": "8727293",
+            "lat": "28.8",
+            "long": "-82.6033",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Ozello, St. Martins River",
+            "station number": "8727306",
+            "lat": "28.825",
+            "long": "-82.6583",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Mangrove Pt., Crystal Bay",
+            "station number": "8727333",
+            "lat": "28.87",
+            "long": "-82.7233",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Ozello north, Crystal Bay",
+            "station number": "8727328",
+            "lat": "28.8633",
+            "long": "-82.6667",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Dixie Bay, Salt River, Crystal Bay",
+            "station number": "8727336",
+            "lat": "28.8817",
+            "long": "-82.635",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Florida Power",
+            "station number": "8727386",
+            "lat": "28.96",
+            "long": "-82.725",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Shell Island, north end",
+            "station number": "8727359",
+            "lat": "28.9233",
+            "long": "-82.6917",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Twin Rivers Marina",
+            "station number": "8727348",
+            "lat": "28.905",
+            "long": "-82.6383",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Kings Bay",
+            "station number": "8727343",
+            "lat": "28.8983",
+            "long": "-82.5983",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Withlacoochee River entrance",
+            "station number": "8727395",
+            "lat": "29.0017",
+            "long": "-82.7583",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "CEDAR KEY",
+            "station number": "8727520",
+            "lat": "29.135",
+            "long": "-83.0317",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Suwannee River entrance",
+            "station number": "TEC4299",
+            "lat": "29.2833",
+            "long": "-83.15",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Suwannee, Salt Creek",
+            "station number": "8727577",
+            "lat": "29.3283",
+            "long": "-83.1517",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "HORSESHOE POINT",
+            "station number": "8727648",
+            "lat": "29.4367",
+            "long": "-83.2933",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Pepperfish Keys",
+            "station number": "TEC4301",
+            "lat": "29.5",
+            "long": "-83.3667",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Steinhatchee River ent., Deadman Bay",
+            "station number": "8727695",
+            "lat": "29.6717",
+            "long": "-83.39",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Fishermans Rest",
+            "station number": "TEC4305",
+            "lat": "29.7333",
+            "long": "-83.5333",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Spring Warrior Creek",
+            "station number": "8727843",
+            "lat": "29.92",
+            "long": "-83.6717",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Mandalay, Aucilla River",
+            "station number": "8727989",
+            "lat": "30.1267",
+            "long": "-83.975",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "ST. MARKS RIVER ENTRANCE",
+            "station number": "8728130",
+            "lat": "30.0783",
+            "long": "-84.1783",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "St. Marks, St. Marks River",
+            "station number": "8728142",
+            "lat": "30.1533",
+            "long": "-84.2033",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Shell Point, Walker Creek",
+            "station number": "8728229",
+            "lat": "30.06",
+            "long": "-84.29",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Bald Point, Ochlockonee Bay",
+            "station number": "8728237",
+            "lat": "29.9483",
+            "long": "-84.3417",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Panacea, Dickerson Bay",
+            "station number": "8728269",
+            "lat": "30.0283",
+            "long": "-84.3867",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Alligator Point, St. James Island",
+            "station number": "8728288",
+            "lat": "29.9033",
+            "long": "-84.4133",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Turkey Point, St. James Island",
+            "station number": "8728360",
+            "lat": "29.915",
+            "long": "-84.5117",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Dog Island, East End",
+            "station number": "8728408",
+            "lat": "29.81",
+            "long": "-84.585",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Dog Island, west end",
+            "station number": "8728465",
+            "lat": "29.785",
+            "long": "-84.6667",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Lanark, St. George Sound",
+            "station number": "8728412",
+            "lat": "29.8783",
+            "long": "-84.595",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Carrabelle, Carrabelle River",
+            "station number": "8728464",
+            "lat": "29.85",
+            "long": "-84.665",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "South Carrabelle Beach",
+            "station number": "8728488",
+            "lat": "29.8017",
+            "long": "-84.7367",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "St. George Island, Northeast End",
+            "station number": "8728486",
+            "lat": "29.7667",
+            "long": "-84.7",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "St. George Island, East End",
+            "station number": "8728548",
+            "lat": "29.6867",
+            "long": "-84.7867",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "St. George Island, Rattlesnake Cove",
+            "station number": "8728552",
+            "lat": "29.6917",
+            "long": "-84.7917",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "St. George Island, 12th St. W (Bayside)",
+            "station number": "8728626",
+            "lat": "29.6533",
+            "long": "-84.8967",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "St. George Island, Sikes Cut",
+            "station number": "8728669",
+            "lat": "29.6133",
+            "long": "-84.9583",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Rock Islands",
+            "station number": "TEC4309",
+            "lat": "29.9667",
+            "long": "-83.8333",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Cat Point",
+            "station number": "8728619",
+            "lat": "29.7233",
+            "long": "-84.8867",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "WHITE BEACH, EAST BAY",
+            "station number": "8728694",
+            "lat": "29.785",
+            "long": "-84.8983",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "APALACHICOLA",
+            "station number": "8728690",
+            "lat": "29.7267",
+            "long": "-84.9817",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Apalachicola River (A&N RR bridge)",
+            "station number": "8728711",
+            "lat": "29.7633",
+            "long": "-85.0333",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Huckleberry Landing, Jackson River",
+            "station number": "8728757",
+            "lat": "29.77",
+            "long": "-85.085",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Lower Anchorage",
+            "station number": "TEC4343",
+            "lat": "29.6",
+            "long": "-85.05",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "West Pass",
+            "station number": "8728766",
+            "lat": "29.6333",
+            "long": "-85.0967",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Eleven Mile, St. Vincent Sound",
+            "station number": "8728786",
+            "lat": "29.7067",
+            "long": "-85.1533",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "East Pass (Destin)",
+            "station number": "8729511",
+            "lat": "30.395",
+            "long": "-86.5133",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Shalimar, Garnier Bayou",
+            "station number": "8729538",
+            "lat": "30.435",
+            "long": "-86.5867",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Port Saint Joe, St. Joseph Bay",
+            "station number": "8728912",
+            "lat": "29.815",
+            "long": "-85.3133",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "St. Joseph Point, St. Joseph Bay",
+            "station number": "8728958",
+            "lat": "29.8733",
+            "long": "-85.39",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "White City, ICWW",
+            "station number": "8728853",
+            "lat": "29.8807",
+            "long": "-85.2214",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Channel entrance",
+            "station number": "8729136",
+            "lat": "30.125",
+            "long": "-85.73",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Panama City",
+            "station number": "8729108",
+            "lat": "30.1523",
+            "long": "-85.6669",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Panama City Beach",
+            "station number": "8729210",
+            "lat": "30.2133",
+            "long": "-85.8783",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Parker",
+            "station number": "8729084",
+            "lat": "30.1267",
+            "long": "-85.6117",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Laird Bayou, East Bay",
+            "station number": "8729045",
+            "lat": "30.1217",
+            "long": "-85.5283",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Farmdale, East Bay",
+            "station number": "8729017",
+            "lat": "30.0167",
+            "long": "-85.47",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Allanton, East Bay",
+            "station number": "8729015",
+            "lat": "30.03",
+            "long": "-85.465",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Wetappo Creek, East Bay",
+            "station number": "8728973",
+            "lat": "30.0383",
+            "long": "-85.3933",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Overstreet",
+            "station number": "8728957",
+            "lat": "29.9967",
+            "long": "-85.37",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Alligator Bayou",
+            "station number": "8729152",
+            "lat": "30.17",
+            "long": "-85.755",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Lynn Haven, North Bay",
+            "station number": "8729102",
+            "lat": "30.255",
+            "long": "-85.6483",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "West Bay Creek, West Bay",
+            "station number": "8729197",
+            "lat": "30.2933",
+            "long": "-85.8583",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Harris, The Narrows",
+            "station number": "8729613",
+            "lat": "30.4083",
+            "long": "-86.7317",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Navarre Beach",
+            "station number": "8729678",
+            "lat": "30.3767",
+            "long": "-86.865",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Fort McRee Breakwater",
+            "station number": "8729887",
+            "lat": "30.3267",
+            "long": "-87.3117",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Warrington, 2 miles south of",
+            "station number": "8729868",
+            "lat": "30.345",
+            "long": "-87.2733",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "PENSACOLA",
+            "station number": "8729840",
+            "lat": "30.4044",
+            "long": "-87.2112",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Hernandez Point, Escambia Bay",
+            "station number": "8729791",
+            "lat": "30.455",
+            "long": "-87.1",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Lora Point, Escambia Bay",
+            "station number": "8729816",
+            "lat": "30.515",
+            "long": "-87.1617",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Floridatown, Escambia Bay",
+            "station number": "8729824",
+            "lat": "30.5817",
+            "long": "-87.18",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Holley, East Bay",
+            "station number": "8729702",
+            "lat": "30.45",
+            "long": "-86.9183",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Bay Point, Blackwater River",
+            "station number": "8729742",
+            "lat": "30.5717",
+            "long": "-87.005",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Shield Point, Blackwater River",
+            "station number": "8729747",
+            "lat": "30.5817",
+            "long": "-87.015",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Milton, Blackwater River",
+            "station number": "TEC4383",
+            "lat": "30.6167",
+            "long": "-87.0333",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Hawkins Rec. Park, Blackwater River",
+            "station number": "8729753",
+            "lat": "30.6367",
+            "long": "-87.0283",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Fishing Bend, Santa Rosa Sound",
+            "station number": "8729806",
+            "lat": "30.3367",
+            "long": "-87.14",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Woodlawn Beach, Santa Rosa Sound",
+            "station number": "8729736",
+            "lat": "30.3867",
+            "long": "-86.9917",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Big Lagoon",
+            "station number": "8729909",
+            "lat": "30.3267",
+            "long": "-87.3567",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Blue Angels Park",
+            "station number": "8729941",
+            "lat": "30.3869",
+            "long": "-87.4288",
+            "predictions": "Harmonic"
+        },
+        {
+            "Location": "Nix Point, Perdido Bay",
+            "station number": "8729962",
+            "lat": "30.3933",
+            "long": "-87.425",
+            "predictions": "Subordinate"
+        },
+        {
+            "Location": "Millview, Perdido Bay",
+            "station number": "8729905",
+            "lat": "30.4183",
+            "long": "-87.3567",
+            "predictions": "Harmonic"
+        }
+    ]
+}

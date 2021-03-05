@@ -1,18 +1,21 @@
 import * as React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 
-export default function SafetyScreen() {
+import Screen from '../components/Screen';
+import SafetyList from '../components/SafetyList';
+
+export default function SafetyScreen({navigation}) {
+    
     return (
-        <View style={styles.container}>
-            <Text>
-                I am safety
-            </Text>
-        </View>
+        <Screen style={styles.container}>
+            <SafetyList navigation={navigation}/>
+        </Screen>
     );
-}
+    
+};
 
 const styles = StyleSheet.create({
     container: {
-        
+        flex: 1
     }
 })
