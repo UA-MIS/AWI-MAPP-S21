@@ -60,13 +60,13 @@ function TideDetails({ station, locationName, tideArray, startDate, endDate}) {
     // var d = new Date(s);
 
 
-for(let i = 0; i < tideArray.length; i++){
-    if(tideArray.type === "L"){
-        tideArray.type = "Low Tide"
-    }else{
-        tideArray.type = "High Tide"
-    }
-}
+// for(let i = 0; i < tideArray.length; i++){
+//     if(tideArray.type === "L"){
+//         tideArray.type = "Low Tide"
+//     }else{
+//         tideArray.type = "High Tide"
+//     }
+// }
 
     
     return (
