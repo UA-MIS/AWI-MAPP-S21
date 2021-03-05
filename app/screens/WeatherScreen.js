@@ -15,32 +15,42 @@ import AddressService from "../utils/AddressService";
 import { Icon } from "../hooks/useCachedResources";
 
 export default function WeatherScreen({ navigation, route }) {
-  const initialWeatherState = {
-    isLoading: true,
-    dtCalled: "",
-    dtCalculated: "",
-    temperature: 0,
-    weatherCondition: null,
-  };
+  // const initialWeatherState = {
+  //   isLoading: true,
+  //   dtCalled: "",
+  //   dtCalculated: "",
+  //   temperature: 0,
+  //   weatherCondition: null,
+  // };
 
-  const [weatherState, setWeatherState] = useState(initialWeatherState);
+  //const [weatherState, setWeatherState] = useState(initialWeatherState);
 
   const [location, setLocation] = useState(LocationService());
 
-  const fetchWeather = async (lat, lon) => {
-    const response = await fetch(
+  const fetchWeather = (lat, lon) => {
+    console.log("In the fetch Weather");
+    fetch(
       `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${API_KEY}&units=imperial`
-    );
-    const json = await response.json();
-
-    setWeatherState({
-      isLoading: false,
-      dtCalled: Date.now(),
-      dtCalculated: json.dt,
-      temperature: json.main.temp,
-      weatherCondition: json.weather[0].main,
-    });
+    )
+      .then((res) => res.json())
+      .then((json) => {
+        var t = Math.round(json.main.temp);
+        setWeatherState({
+          isLoading: false,
+          temperature: t,
+          weatherCondition: json.weather[0].main,
+          error: null,
+        });
+      });
   };
+
+  const initialWeatherState = {
+    isLoading: true,
+    temperature: 0,
+    weatherCondition: null,
+    error: null,
+  };
+  const [weatherState, setWeatherState] = useState(initialWeatherState);
 
   // Add refresh and map buttons in header
   useLayoutEffect(() => {
@@ -86,17 +96,16 @@ export default function WeatherScreen({ navigation, route }) {
   let city = AddressService(location);
 
   return (
-    <View style={styles.container}>
+    <Screen style={styles.container}>
       {weatherState.isLoading ? (
-        <ActivityIndicator size="large" loading={weatherState.isLoading} />
+        <Text>Is Loading</Text>
       ) : (
-        <View>
-          <Text>{city}</Text>
-          <Text>Current temperature: {weatherState.temperature}</Text>
-          <Text>Datetime: {weatherState.dtCalled}</Text>
-        </View>
+        <WeatherDetails
+          weather={weatherState.weatherCondition}
+          temperature={weatherState.temperature}
+        />
       )}
-    </View>
+    </Screen>
   );
 }
 
