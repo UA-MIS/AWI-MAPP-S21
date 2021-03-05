@@ -5,6 +5,7 @@ import { HeaderBackButton } from "react-navigation-stack";
 
 import Screen from "../components/Screen";
 
+
 export default function WeatherMapScreen({ navigation, route }) {
   const { initLocation } = route.params;
 

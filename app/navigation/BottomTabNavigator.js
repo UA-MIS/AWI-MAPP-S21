@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import WeatherScreen from '../screens/WeatherScreen';
 import WeatherMapScreen from '../screens/WeatherMapScreen';
 import TidesScreen from '../screens/TidesScreen';
+import TidesMapScreen from '../screens/TidesMapScreen';
 import SafetyScreen from '../screens/SafetyScreen';
 import SafetyItemScreen from '../screens/SafetyItemScreen';
 
@@ -87,6 +88,11 @@ const TidesStack = createStackNavigator();
 function TidesNavigator() {
     return (
         <TidesStack.Navigator>
+            <TidesStack.Screen
+                name='TidesMapScreen'
+                component={TidesMapScreen}
+                options={{ headerTitle: 'Select a Station...' }}
+            />
             <TidesStack.Screen
                 name="TidesScreen"
                 component={TidesScreen}

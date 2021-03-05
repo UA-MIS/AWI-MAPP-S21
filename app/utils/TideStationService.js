@@ -4,7 +4,7 @@ import LocationService from './LocationService';
 import * as TideStations from '../assets/TideStations.json';
 
 
-export default function TideStationService(curLocation = LocationService()) {
+export default function TideStationService(curLocation) {
 
     const stations = TideStations.TideStations;
 
@@ -30,5 +30,10 @@ export default function TideStationService(curLocation = LocationService()) {
         }
     }
 
-    return closestStation['station number'];
-}
+    console.log('TideStationService: ' + closestStation['station number']);
+
+    return {
+        stationNum: closestStation['station number'],
+        stationName: closestStation['Location']
+    };
+};
