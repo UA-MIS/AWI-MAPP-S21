@@ -28,7 +28,6 @@ export default function WeatherScreen({ navigation, route }) {
   const [location, setLocation] = useState(LocationService());
 
   const fetchWeather = (lat, lon) => {
-    console.log("In the fetch Weather");
     fetch(
       `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${API_KEY}&units=imperial`
     )

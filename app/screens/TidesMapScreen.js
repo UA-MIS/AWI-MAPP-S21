@@ -21,14 +21,12 @@ function TidesMapScreen({ navigation, route }) {
     const [mapState, setMapState] = useState(initialMapState);
 
     const getLocation = async () => {
-        console.log("get location was called");
         try {
             const {granted} = await Location.requestPermissionsAsync();
             if(!granted){
               return;
             } else {
               const {coords: {latitude, longitude}} = await Location.getCurrentPositionAsync();
-              console.log("in get location and found " + latitude + " " + longitude);
               isLoading = false;
               setMapState({
                     ...mapState,
@@ -49,7 +47,6 @@ function TidesMapScreen({ navigation, route }) {
 
     
     const handleMapPress = (event)=>{
-        console.log("in handle Map Press");
         setMapState({
             ...mapState,
             mapRegion: { latitude: event.nativeEvent.coordinate.latitude, longitude: event.nativeEvent.coordinate.longitude, latitudeDelta: 0.9, longitudeDelta: 0.9 },

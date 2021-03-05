@@ -29,9 +29,6 @@ export default function TideStationService(curLocation) {
             closestStation = stations[i];
         }
     }
-
-    console.log('TideStationService: ' + closestStation['station number']);
-
     return {
         stationNum: closestStation['station number'],
         stationName: closestStation['Location']
