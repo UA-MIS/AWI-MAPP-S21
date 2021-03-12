@@ -7,6 +7,7 @@ import {
   Dimensions,
   ImageBackground,
   Image,
+  TouchableOpacity,
 } from "react-native";
 import routes from "../navigation/routes";
 import Ocean from "../assets/ocean.jpg";
@@ -14,29 +15,45 @@ import AWILogo from "../assets/awi.jpg";
 import SeaGrantLogo from "../assets/SeaGrant.png";
 
 export default function Home({ navigation }) {
+  var colors = ["red", "blue", "yellow", "white"];
+
   return (
     <View style={styles.container}>
-      <View style={styles.backgroundContainer}>
-        <ImageBackground source={Ocean} style={styles.image}></ImageBackground>
-      </View>
       <View style={styles.topContainer}>
-        <Image style={styles.logo} source={AWILogo} />
-        <Image style={styles.logo} source={SeaGrantLogo} />
-        <Text style={styles.h1}>Tuscaloosa</Text>
-        <Text style={styles.h2}>33.189281, -87.56515</Text>
+        <ImageBackground source={Ocean} style={styles.image}>
+          <View style={styles.logoflex}>
+            <Image style={styles.logo} source={AWILogo} />
+            <Image style={styles.logo} source={SeaGrantLogo} />
+          </View>
+          <Text style={styles.h1}>Tuscaloosa</Text>
+          <Text style={styles.h2}>33.189281, -87.56515</Text>
+        </ImageBackground>
       </View>
-      <View style={styles.middleContainer}>
-        <Text style={styles.h2}>Hello</Text>
-        <Button
-          title="Weather"
+      <View style={styles.tileContainer}>
+        <TouchableOpacity
           onPress={() => navigation.navigate(routes.WEATHER)}
-        />
-      </View>
-      <View style={styles.bottomContainer}>
-        <Button
-          title="Weather"
-          onPress={() => navigation.navigate(routes.WEATHER)}
-        />
+          style={[styles.tile, { backgroundColor: "#E9F2FF" }]}
+        >
+          <Text>Weather</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate(routes.TIDES)}
+          style={[styles.tile, { backgroundColor: "#E6E6E6" }]}
+        >
+          <Text>Tides</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate(routes.SAFETY)}
+          style={[styles.tile, { backgroundColor: "#CFDFD8" }]}
+        >
+          <Text>Weather</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate(routes.TIDES)}
+          style={[styles.tile, { backgroundColor: "#FFF" }]}
+        >
+          <Text>Tides</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -45,7 +62,7 @@ const win = Dimensions.get("window");
 const styles = StyleSheet.create({
   image: {
     width: win.width,
-    height: 260,
+    height: 300,
     justifyContent: "center",
   },
   container: {
@@ -72,27 +89,25 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
     alignItems: "center",
   },
-  middleContainer: {
-    flex: 3,
-    justifyContent: "center",
+  tileContainer: {
+    justifyContent: "space-between",
     alignItems: "center",
-  },
-  bottomContainer: {
-    justifyContent: "flex-end",
-    width: "90%",
-    margin: 20,
-    padding: 10,
-  },
-  backgroundContainer: {
-    position: "absolute",
-    top: 0,
-    bottom: 0,
-    left: 0,
-    right: 0,
+    flexDirection: "row",
+    flexWrap: "wrap",
   },
   logo: {
     backgroundColor: "rgba(0,0,0,0)",
     width: 200,
     height: 200,
+  },
+  logoflex: {
+    flexDirection: "row",
+  },
+  tile: {
+    width: "47%",
+    borderRadius: 5,
+    paddingHorizontal: 12,
+    paddingVertical: 50,
+    margin: 5,
   },
 });
