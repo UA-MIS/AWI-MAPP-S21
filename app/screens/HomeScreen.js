@@ -34,25 +34,25 @@ export default function Home({ navigation }) {
           onPress={() => navigation.navigate(routes.WEATHER)}
           style={[styles.tile, { backgroundColor: "#E9F2FF" }]}
         >
-          <Text>Weather</Text>
+          <Text>WEATHER</Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => navigation.navigate(routes.TIDES)}
           style={[styles.tile, { backgroundColor: "#E6E6E6" }]}
         >
-          <Text>Tides</Text>
+          <Text>TIDES</Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => navigation.navigate(routes.SAFETY)}
           style={[styles.tile, { backgroundColor: "#CFDFD8" }]}
         >
-          <Text>Weather</Text>
+          <Text>SAFETY</Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => navigation.navigate(routes.TIDES)}
           style={[styles.tile, { backgroundColor: "#FFF" }]}
         >
-          <Text>Tides</Text>
+          <Text>REGULATIONS</Text>
         </TouchableOpacity>
       </View>
     </View>
