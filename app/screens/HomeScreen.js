@@ -11,12 +11,10 @@ import {
 } from "react-native";
 import routes from "../navigation/routes";
 import Ocean from "../assets/ocean.jpg";
-import AWILogo from "../assets/awi.jpg";
+import AWILogo from "../assets/awi.png";
 import SeaGrantLogo from "../assets/SeaGrant.png";
 
 export default function Home({ navigation }) {
-  var colors = ["red", "blue", "yellow", "white"];
-
   return (
     <View style={styles.container}>
       <View style={styles.topContainer}>
@@ -34,25 +32,25 @@ export default function Home({ navigation }) {
           onPress={() => navigation.navigate(routes.WEATHER)}
           style={[styles.tile, { backgroundColor: "#E9F2FF" }]}
         >
-          <Text>WEATHER</Text>
+          <Text style={styles.tileText}>WEATHER</Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => navigation.navigate(routes.TIDES)}
           style={[styles.tile, { backgroundColor: "#E6E6E6" }]}
         >
-          <Text>TIDES</Text>
+          <Text style={styles.tileText}>TIDES</Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => navigation.navigate(routes.SAFETY)}
           style={[styles.tile, { backgroundColor: "#CFDFD8" }]}
         >
-          <Text>SAFETY</Text>
+          <Text style={styles.tileText}>SAFETY</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => navigation.navigate(routes.TIDES)}
+          onPress={() => navigation.navigate(routes.REGULATIONS)}
           style={[styles.tile, { backgroundColor: "#FFF" }]}
         >
-          <Text>REGULATIONS</Text>
+          <Text style={styles.tileText}>REGULATIONS</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -85,12 +83,12 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(204, 204, 204, 0.5)",
   },
   topContainer: {
-    flex: 2,
-    justifyContent: "flex-start",
+    flex: 1,
     alignItems: "center",
   },
   tileContainer: {
-    justifyContent: "space-between",
+    flex: 1,
+    justifyContent: "center",
     alignItems: "center",
     flexDirection: "row",
     flexWrap: "wrap",
@@ -109,5 +107,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 50,
     margin: 5,
+  },
+  tileText: {
+    fontSize: 25,
+    fontFamily: "opensansregular",
   },
 });
