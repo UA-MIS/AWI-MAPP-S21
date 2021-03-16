@@ -20,9 +20,9 @@ export default function useCachedResources() {
         await Font.loadAsync({
           fontello: require("../assets/fonts/fontello.ttf"),
           "space-mono": require("../assets/fonts/SpaceMono-Regular.ttf"),
-          opensanslight: require("../assets/fonts/Open_Sans/OpenSans-Light.ttf"),
-          opensansregular: require("../assets/fonts/Open_Sans/OpenSans-Regular.ttf"),
-          opensanssemibold: require("../assets/fonts/Open_Sans/OpenSans-SemiBold.ttf"),
+          "opensanslight": require("../assets/fonts/Open_Sans/OpenSans-Light.ttf"),
+          "opensansregular": require("../assets/fonts/Open_Sans/OpenSans-Regular.ttf"),
+          "opensanssemibold": require("../assets/fonts/Open_Sans/OpenSans-SemiBold.ttf"),
         });
       } catch (e) {
         // We might want to provide this error information to an error reporting service

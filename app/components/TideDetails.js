@@ -1,49 +1,3 @@
-/*
-import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
- 
-function TideDetails({station, time, type, tide}) {
-    return (
-        <View >
-                <Text>{station}  {time}  {type}  {tide}</Text>         
-        </View>
-    );
-}
- 
-const styles = StyleSheet.create({
-    tideContainer: {
-        flex: 0,
-        backgroundColor: '#f7b733'
-    },
-    headerContainer: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
-    tideText: {
-        fontSize: 10,
-        color: '#fff'
-    },
-    bodyContainer: {
-        flex: 2,
-        alignItems: 'flex-start',
-        justifyContent: 'flex-end',
-        paddingLeft: 25,
-        marginBottom: 40
-    },
-    title: {
-        fontSize: 48,
-        color: '#fff'
-    },
-    subtitle: {
-        fontSize: 24,
-        color: '#fff'
-    }
-})
- 
-export default TideDetails;
-*/
-
 
 import React from 'react';
 import { Button, Text, View, StyleSheet } from 'react-native';
@@ -67,19 +21,32 @@ function TideDetails({ station, locationName, tideArray, startDate, endDate}) {
 //         tideArray.type = "High Tide"
 //     }
 // }
+function getDayOfWeek(date) {
+    const dayOfWeek = new Date(date).getDay();    
+    return isNaN(dayOfWeek) ? null : 
+    ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][dayOfWeek];
+}
 
-    
     return (
 
         <View style={styles.container}>
-            <Text style={styles.header}>Station: {locationName} (#{station})</Text>
-                
+            <Text style={styles.header}>Station: {locationName} (#{station}){'\n'}{getDayOfWeek( new Date())}{'\n'}
+                <Text style={styles.titles}>
+                {'\t'}Type:                       Time:                       Height:{'\n'} 
+                </Text>
+                {'\n'}Future Tides
+            </Text>
             <ScrollView>
                 {tideArray.map((data, index) => {
+                    
                     return (
                         <View key={index} style={styles.entry}>
+                            <Text style={styles.days}>monday</Text>
+                            <Text style={styles.titles}>
+                                {'\t'}Type:                       Time:                       Height:{'\n'} 
+                            </Text>
                             <Text>
-                                Type: {data.type}{'\n'}Time: {data.t}{'\n'}Height: {data.v}
+                                {'\t'}  {data.type}              {data.t}              {data.v}
                             </Text>
                         </View>
                     )
@@ -93,21 +60,29 @@ function TideDetails({ station, locationName, tideArray, startDate, endDate}) {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 0,
+        
 	},
     header: {
-        fontWeight: 'bold',
         textAlign: 'center',
-        fontSize: 20
+        fontSize: 20,
+        borderBottomColor: 'black',
+        borderBottomWidth: 1,
+    },
+    days: {
+        fontWeight: 'bold',
+        fontSize: 18
+    },
+    titles: {
+        fontWeight: 'bold',
+        fontSize: 13
     },
     entry: {
-        marginTop: 10,
-        marginLeft: 10,
-        marginRight: 10,
-        padding: 4,
-        backgroundColor: '#d3d3d3',
-        borderLeftColor: '#696969',
-        borderLeftWidth: 3
+        marginTop: 20,
+        textAlign: 'center',
+        padding: 2,
+        borderBottomColor: 'black',
+        borderBottomWidth: 1,
     }
 })
 
