@@ -7,11 +7,6 @@ import DatePicker from 'react-native-datepicker';
 
 function TideDetails({ station, locationName, tideArray, startDate, endDate}) {
 
-   
-
-    // var s = tideArray[0].t.replace(" ", "T") ;
-    // s= s.concat(":00");
-    // var d = new Date(s);
 
 
 // for(let i = 0; i < tideArray.length; i++){
@@ -21,32 +16,33 @@ function TideDetails({ station, locationName, tideArray, startDate, endDate}) {
 //         tideArray.type = "High Tide"
 //     }
 // }
+
 function getDayOfWeek(date) {
-    const dayOfWeek = new Date(date).getDay();    
+    const dayOfWeek = new Date(date).getDay() ;    
     return isNaN(dayOfWeek) ? null : 
     ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][dayOfWeek];
 }
 
     return (
+        
 
         <View style={styles.container}>
-            <Text style={styles.header}>Station: {locationName} (#{station}){'\n'}{getDayOfWeek( new Date())}{'\n'}
+            <Text style={styles.header}>Station: {locationName} (#{station}){'\n'}Current Tides for: {getDayOfWeek( new Date())}{'\n'}
                 <Text style={styles.titles}>
-                {'\t'}Type:                       Time:                       Height:{'\n'} 
+                {'\t'}Type:                       Time:                       Height:{'\n'}
                 </Text>
                 {'\n'}Future Tides
             </Text>
             <ScrollView>
                 {tideArray.map((data, index) => {
-                    
                     return (
                         <View key={index} style={styles.entry}>
-                            <Text style={styles.days}>monday</Text>
+                            <Text style={styles.days}>{getDayOfWeek( new Date())}</Text>
                             <Text style={styles.titles}>
                                 {'\t'}Type:                       Time:                       Height:{'\n'} 
                             </Text>
                             <Text>
-                                {'\t'}  {data.type}              {data.t}              {data.v}
+                                {'\t'}  {data.type}              {data.t}              {data.v} ft
                             </Text>
                         </View>
                     )
@@ -65,7 +61,7 @@ const styles = StyleSheet.create({
 	},
     header: {
         textAlign: 'center',
-        fontSize: 20,
+        fontSize: 18,
         borderBottomColor: 'black',
         borderBottomWidth: 1,
     },

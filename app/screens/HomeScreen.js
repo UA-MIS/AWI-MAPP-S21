@@ -125,5 +125,7 @@ const styles = StyleSheet.create({
   tileText: {
     fontSize: 20,
     fontFamily: "opensansregular",
+    textAlign: 'center',
+    
   },
 });
