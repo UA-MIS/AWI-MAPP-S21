@@ -4,6 +4,8 @@ import * as React from "react";
 
 import { createIconSetFromFontello } from "@expo/vector-icons";
 import fontelloConfig from "../assets/fonts/config.json";
+import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
+
 
 export default function useCachedResources() {
   const [isLoadingComplete, setLoadingComplete] = React.useState(false);

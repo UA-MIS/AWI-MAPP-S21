@@ -13,6 +13,7 @@ import routes from "../navigation/routes";
 import Ocean from "../assets/ocean.jpg";
 import AWILogo from "../assets/awi.png";
 import SeaGrantLogo from "../assets/SeaGrant.png";
+import useCachedResources from "../hooks/useCachedResources";
 
 export default function Home({ navigation }) {
   return (
@@ -20,11 +21,13 @@ export default function Home({ navigation }) {
       <View style={styles.topContainer}>
         <ImageBackground source={Ocean} style={styles.image}>
           <View style={styles.logoflex}>
-            <Image style={styles.logo} source={AWILogo} />
-            <Image style={styles.logo} source={SeaGrantLogo} />
+            <Image style={styles.logoAwi} source={AWILogo} />
+            <Image style={styles.logoSeaGrant} source={SeaGrantLogo} />
           </View>
+          <View style={styles.textContainer}>
           <Text style={styles.h1}>Tuscaloosa</Text>
           <Text style={styles.h2}>33.189281, -87.56515</Text>
+          </View>
         </ImageBackground>
       </View>
       <View style={styles.tileContainer}>
@@ -70,6 +73,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "100%",
   },
+  textContainer:{
+    flex: 2
+  },
   h1: {
     opacity: 1,
     color: "#FFF",
@@ -91,15 +97,23 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "row",
-    flexWrap: "wrap",
+    flexWrap: "wrap"
   },
-  logo: {
+  logoAwi: {
     backgroundColor: "rgba(0,0,0,0)",
-    width: 200,
-    height: 200,
+    width: 250,
+    height: 35,
+    marginTop: 20
+
+  },
+  logoSeaGrant: {
+    backgroundColor: "rgba(0,0,0,0)",
+    width: 180,
+    height: 180,
   },
   logoflex: {
-    flexDirection: "row",
+    flex: 4,
+    alignItems: 'center',
   },
   tile: {
     width: "47%",
@@ -109,7 +123,7 @@ const styles = StyleSheet.create({
     margin: 5,
   },
   tileText: {
-    fontSize: 25,
+    fontSize: 20,
     fontFamily: "opensansregular",
   },
 });
