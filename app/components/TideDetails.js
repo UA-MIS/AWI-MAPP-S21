@@ -39,10 +39,10 @@ function getDayOfWeek(date) {
                         <View key={index} style={styles.entry}>
                             <Text style={styles.days}>{getDayOfWeek( new Date())}</Text>
                             <Text style={styles.titles}>
-                                {'\t'}Type:                       Time:                       Height:{'\n'} 
+                                {'\t'}Time:                       Type:                       Height:{'\n'} 
                             </Text>
                             <Text>
-                                {'\t'}  {data.type}              {data.t}              {data.v} ft
+                                {'\t'}{data.t}              {data.type}              {data.v} ft
                             </Text>
                         </View>
                     )
